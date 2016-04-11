@@ -1,0 +1,71 @@
+<body>
+
+{{home "accueil"}}
+
+<div class="panel panel-default container fill">
+
+	<div class="container-fluid header" style="padding:20px;">
+		<img src="logo.png" style="width: 50px" />
+		<h3>BlockFest 2016</h3>
+	</div>
+	
+	<nav class="navbar navbar-default">
+		<ul class="nav navbar-nav col-sm-12">
+			<li role=presentation
+			id="accueil-tab"
+			class="{{#if $eq tab 'accueil'}}active{{/if}}">
+				<a href=#>Accueil</a>
+			</li>
+			<li role=presentation
+			id="program-tab"
+			class="{{#if $eq tab 'program'}}active{{/if}}">
+				<a href=#>Programme</a>
+			</li>
+			<li role=presentation
+			id="participate-tab"
+			class="{{#if $eq tab 'participate'}}active{{/if}}">
+				<a href=#>Comment participer ?</a>
+			</li>
+			<li role=presentation
+			id="rules-tab"
+			class="{{#if $eq tab 'rules'}}active{{/if}}">
+				<a href=#>Règles du jeu</a>
+			</li>
+			<li role=presentation
+			id="team-tab"
+			class="{{#if $eq tab 'team'}}active{{/if}}">
+				<a href=#>Équipe</a>
+			</li>
+			<li role=presentation
+			id="info-tab"
+			class="{{#if $eq tab 'info'}}active{{/if}}">
+				<a href=#>Infos pratiques</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<div class="container-fill">
+		<div class="row" style="margin-top:20px; padding:2%;">
+			{{#if $eq tab "accueil"}}
+				{{> accueil}}
+			{{/if}}
+			{{#if $eq tab "program"}}
+				{{> program}}
+			{{/if}}
+			{{#if $eq tab "participate"}}
+				{{> participate}}
+			{{/if}}
+			{{#if $eq tab "rules"}}
+				{{> rules}}
+			{{/if}}
+			{{#if $eq tab "team"}}
+				{{> team}}
+			{{/if}}
+			{{#if $eq tab "info"}}
+				{{> info}}
+			{{/if}}
+		</div>
+	</div>
+</div>
+
+</body>
