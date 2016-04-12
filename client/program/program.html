@@ -1,0 +1,28 @@
+<template name="program">
+
+	{{home "week"}}
+
+	<div class="col-md-3">
+		<div class="list-group">
+			<a href=#
+			id="week"
+			class="list-group-item {{#if $eq program_tab 'week'}}active{{/if}}">
+				Semaine
+			</a>
+			<a href=#
+			id="weekend"
+			class="list-group-item {{#if $eq program_tab 'weekend'}}active{{/if}}">
+				Weekend
+			</a>
+		</div>
+	</div>
+
+	{{#if $eq program_tab "week"}}
+		{{> week}}
+	{{/if}}
+	{{#if $eq program_tab "weekend"}}
+		{{> weekend}}
+	{{/if}}
+
+</template>
+

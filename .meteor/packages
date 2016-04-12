@@ -20,3 +20,7 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 raix:handlebar-helpers
 twbs:bootstrap
 session
+accounts-ui
+accounts-password
+accounts-facebook
+meteortoys:allthings

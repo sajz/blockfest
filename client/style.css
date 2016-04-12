@@ -6,6 +6,10 @@ textarea {
 	resize: vertical;
 }
 
+.panel-content {
+	padding: 20px;
+}
+
 .container {
 	border-radius:0;
 	margin-left: 10%;
