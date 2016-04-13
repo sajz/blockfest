@@ -7,6 +7,9 @@
 	<div class="container-fluid header" style="padding:20px;">
 		<img src="logo.png" style="width: 50px" />
 		<h3>BlockFest 2016</h3>
+		<div class=col-md-offset-9 style=padding-top:15px;>
+			{{> loginButtons}}
+		</div>
 	</div>
 
 	<nav class="navbar navbar-default">
@@ -41,10 +44,13 @@
 			class="{{#if $eq tab 'info'}}active{{/if}}">
 				<a href=#>Infos pratiques</a>
 			</li>
-
-			<li class="col-sm-2" style="float:right; padding-top:15px;">
-				{{> loginButtons}}
+			{{#if currentUser}}
+			<li role=presentation
+			id="profile-tab"
+			class="{{#if $eq tab 'profile'}}active{{/if}}">
+				<a href=#>Mon profil</a>
 			</li>
+			{{/if}}
 		</ul>
 	</nav>
 	
@@ -67,6 +73,9 @@
 			{{/if}}
 			{{#if $eq tab "info"}}
 				{{> info}}
+			{{/if}}
+			{{#if $eq tab "profile"}}
+				{{> profile}}
 			{{/if}}
 		</div>
 	</div>

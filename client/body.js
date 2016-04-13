@@ -21,5 +21,6 @@ Template.body.events({
 	"click #participate-tab":	function () {Session.set("tab", "participate");	},
 	"click #rules-tab":			function () {Session.set("tab", "rules");		},
 	"click #team-tab":			function () {Session.set("tab", "team");		},
-	"click #info-tab":			function () {Session.set("tab", "info");		}
+	"click #info-tab":			function () {Session.set("tab", "info");		},
+	"click #profile-tab":		function () {Session.set("tab", "profile");		}
 });

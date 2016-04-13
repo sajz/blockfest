@@ -1,0 +1,23 @@
+<template name="profile">
+
+	<div>
+		<div>
+			<img src={{picture}}>
+		</div>
+
+		<div class=row>
+			<div class=col-md-4>
+				<input id=email placeholder={{email}} type=text class=form-control>
+			</div>
+			<div class=col-md-4>
+				<input id=name placeholder={{field "name" "Prénom"}} type=text class=form-control>
+			</div>
+			<div class=col-md-4>
+				<input id=surname placeholder={{field "surname" "Nom"}} type=text class=form-control>
+			</div>
+		</div>
+
+		<button class="btn btn-default" id=update>Mettre à jour</button>
+	</div>
+
+</template>
