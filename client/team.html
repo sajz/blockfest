@@ -1,7 +1,27 @@
 <template name="team">
-	{{#if user.admin}}
-		add
-	{{/if}}
+
 	{{getTeam}}
+
+	<div class=row>
+	{{#each session "contribs"}}
+		{{> contrib}}
+	{{/each}}
+	</div>
+
+	{{#if currentUser.profile.contrib}}
+	<div class="input-group col-md-4 col-md-offset-8">
+		<input id=member type="text" class="form-control" placeholder="login / mail">
+		<span class="input-group-btn">
+			<button id=add class="btn btn-default">ajouter un membre</button>
+		</span>
+	</div>
+
+	{{/if}}
+
 </template>
 
+<template name="contrib">
+	<div class="well well-default contrib col-md-2">
+		{{_id}}
+	</div>
+</template>

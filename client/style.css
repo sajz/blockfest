@@ -6,6 +6,10 @@ textarea {
 	resize: vertical;
 }
 
+.contrib {
+	margin: 5px;
+}
+
 .nav-justified li {
 	padding: 5px;
 }

@@ -1,3 +1,7 @@
+Template.registerHelper("session", function (key) {
+	return (Session.get(key));
+});
+
 Template.body.helpers({
 	home:		function(home) {
 		if (!Session.get("tab"))
