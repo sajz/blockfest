@@ -1,3 +1,34 @@
 <template name="participate">
-</template>
 
+	{{home "students"}}
+
+	<ul class="nav nav-pills nav-justified">
+		<li role=presentation
+			id="students-tab"
+			class="{{#if $eq participate_tab 'students'}}active{{/if}}">
+			<a href=#>Contributeurs / Étudiants</a>
+		</li>
+		<li role=presentation
+			id="enterprises-tab"
+			class="{{#if $eq participate_tab 'enterprises'}}active{{/if}}">
+			<a href=#>Entreprises</a>
+		</li>
+		<li role=presentation
+			id="sponsors-tab"
+			class="{{#if $eq participate_tab 'sponsors'}}active{{/if}}">
+			<a href=#>Sponsors</a>
+		</li>
+	</ul>
+
+
+	{{#if $eq participate_tab "students"}}
+		{{> students}}
+	{{/if}}
+	{{#if $eq participate_tab "enterprises"}}
+		{{> enterprises}}
+	{{/if}}
+	{{#if $eq participate_tab "sponsors"}}
+		{{> sponsors}}
+	{{/if}}
+
+</template>

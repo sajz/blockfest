@@ -3,24 +3,18 @@
 	{{home "week"}}
 
 	<ul class="nav nav-pills nav-justified">
-		  ...
+		<li role=presentation
+			id="week-tab"
+			class="{{#if $eq program_tab 'week'}}active{{/if}}">
+			<a href=#>Semaine</a>
+		</li>
+		<li role=presentation
+			id="weekend-tab"
+			class="{{#if $eq program_tab 'weekend'}}active{{/if}}">
+			<a href=#>Weekend</a>
+		</li>
 	</ul>
 
-
-	<div class="col-md-3">
-		<div class="list-group">
-			<a href=#
-			id="week"
-			class="list-group-item {{#if $eq program_tab 'week'}}active{{/if}}">
-				Semaine
-			</a>
-			<a href=#
-			id="weekend"
-			class="list-group-item {{#if $eq program_tab 'weekend'}}active{{/if}}">
-				Weekend
-			</a>
-		</div>
-	</div>
 
 	{{#if $eq program_tab "week"}}
 		{{> week}}

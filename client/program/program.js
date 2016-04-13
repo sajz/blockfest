@@ -14,6 +14,6 @@ Template.program.helpers({
 });
 
 Template.body.events({
-	"click #week":		function () {Session.set(tabname, "week");		},
-	"click #weekend":	function () {Session.set(tabname, "weekend");	}
+	"click #week-tab":		function () {Session.set(tabname, "week");		},
+	"click #weekend-tab":	function () {Session.set(tabname, "weekend");	}
 });
