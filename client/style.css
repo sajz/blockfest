@@ -6,6 +6,13 @@ textarea {
 	resize: vertical;
 }
 
+.onename {
+	border: 1px solid #CCCCCC;
+	border-radius: 0;
+	box-shadow: 0;
+	padding: 10px;
+}
+
 .contrib {
 	margin: 5px;
 }

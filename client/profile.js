@@ -28,5 +28,11 @@ Template.profile.events({
 			}
 		}
 		Meteor.call("update_user", Meteor.user()._id, {profile: update});
+	},
+	"click #update_onename": function (event) {
+		event.preventDefault();
+		Meteor.call("fetchOneName", $("#onename_id").val());
+		$("#onename_id").val("");
+		return (false);
 	}
 });
