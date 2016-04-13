@@ -27,7 +27,7 @@ Template.profile.events({
 				$("#" + fields[i]).val("");
 			}
 		}
-		Meteor.call("update_user", Meteor.user()._id, {profile: update});
+		Meteor.call("update_user", Meteor.user()._id, update);
 	},
 	"click #update_onename": function (event) {
 		event.preventDefault();

@@ -9,7 +9,6 @@ Template.team.helpers({
 Template.team.events({
 	"click #add": function (event) {
 		event.preventDefault();
-		var name = event.target.parentElement.parentElement.children[0].value;
-		Meteor.call("add_contrib", name);
+		Meteor.call("add_contrib", $("#onename").val());
 	}
 });
