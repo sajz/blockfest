@@ -22,6 +22,7 @@
 
 <template name="contrib">
 	<div class="well well-default contrib col-md-2">
-		{{_id}}
+		{{profile.onename.name.formatted}}
+		<img src={{profile.onename.avatar.url}} style=width:100%;>
 	</div>
 </template>
