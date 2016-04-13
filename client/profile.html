@@ -1,48 +1,51 @@
 <template name="profile">
 
-	<div>
-		<div class=row>
-			<div class=col-md-4>
-				<input id=email placeholder={{email}} type=text class=form-control>
+	<div class=row>
+		<div class=col-sm-6>
+			<input id=email placeholder={{email}} type=text class=form-control>
+			<div class=row>
+				<div class=col-md-6>
+					<input id=name type=text class=form-control
+					placeholder={{field "name" "Prénom"}} >
+				</div>
+				<div class=col-md-6>
+					<input id=surname type=text class=form-control
+					placeholder={{field "surname" "Nom"}} >
+				</div>
 			</div>
-			<div class=col-md-4>
-				<input id=name placeholder={{field "name" "Prénom"}} type=text class=form-control>
-			</div>
-			<div class=col-md-4>
-				<input id=surname placeholder={{field "surname" "Nom"}} type=text class=form-control>
-			</div>
+			<button class="btn btn-default" id=update>Mettre à jour</button>
 		</div>
 
-		<button class="btn btn-default" id=update>Mettre à jour</button>
-	</div>
+		<div class="col-sm-6">
+			<form class=onename>
+				<div class=form-group>
+					<label for=onename>
+						<a target=_blank href=https://onename.com/>onename</a>
+						ID :
+					</label>
+					<input class=form-control id=onename_id 
+					placeholder={{currentUser.profile.onename.id}}>
+				</div>
 
-	<div class="col-sm-4 col-sm-offset-8">
-		<form class=onename>
-			<div class=form-group>
-				<label for=onename><a target=_blank href=https://onename.com/>onename</a> ID : </label>
-				<input type=text class=form-control id=onename_id
-				placeholder={{currentUser.profile.onename.id}} />
-			</div>
-
-			{{#if currentUser.profile.onename}}
-			<div class= "form-group row">
-				<div class="col-sm-3">
-					<img class="img-circle" src="{{currentUser.profile.onename.avatar.url}}" />
+				{{#if currentUser.profile.onename}}
+				<div class= "form-group row">
+					<div class="col-sm-3">
+						<img class="img-circle" 
+						src="{{currentUser.profile.onename.avatar.url}}"/>
+					</div>
+					<div class="col-sm-9">
+						<input class="form-control onename" disabled 
+						placeholder={{currentUser.profile.onename.name.formatted}}>
+					</div>
+					<div class="col-sm-9">
+						<input class="form-control onename" disabled
+						placeholder={{currentUser.profile.onename.location.formatted}}>
+					</div>
 				</div>
-				<div class="col-sm-9">
-					<input type=text name=onename
-					class="form-control onename"
-					placeholder={{currentUser.profile.onename.name.formatted}} disabled />
-				</div>
-				<div class="col-sm-9">
-					<input type=text name=onename
-					class="form-control onename"
-					placeholder={{currentUser.profile.onename.location.formatted}} disabled />
-				</div>
-			</div>
-			{{/if}}
-			<button id=update_onename class="btn btn-default">Mettre à jour</button>
-		</form>
+				{{/if}}
+				<button id=update_onename class="btn btn-default">Mettre à jour</button>
+			</form>
+		</div>
 	</div>
 
 </template>
