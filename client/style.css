@@ -89,3 +89,18 @@ textarea {
 	margin-bottom: auto;
 	margin-left: 10px;
 }
+
+
+
+
+.exergue {
+	color: #b10000;
+}
+
+.active a{
+	background-color: #CCC !important;
+}
+
+ a{
+	color: #b10000;
+}
