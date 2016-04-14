@@ -40,6 +40,11 @@
 				<a href=#>Équipe</a>
 			</li>
 			<li role=presentation
+			id="partners-tab"
+			class="{{#if $eq tab 'partners'}}active{{/if}}">
+				<a href=#>Partenaires</a>
+			</li>
+			<li role=presentation
 			id="info-tab"
 			class="{{#if $eq tab 'info'}}active{{/if}}">
 				<a href=#>Infos pratiques</a>
@@ -70,6 +75,9 @@
 			{{/if}}
 			{{#if $eq tab "team"}}
 				{{> team}}
+			{{/if}}
+			{{#if $eq tab "partners"}}
+				{{> partners}}
 			{{/if}}
 			{{#if $eq tab "info"}}
 				{{> info}}
