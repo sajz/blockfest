@@ -3,6 +3,11 @@ Template.registerHelper("session", function (key) {
 });
 
 Template.body.helpers({
+	has_access:	function () {
+		if (Session.get("pwd") == "bisou")
+			return (true);
+		return (false);
+	},
 	home:		function(home) {
 		if (!Session.get("tab"))
 			Session.set("tab", home);

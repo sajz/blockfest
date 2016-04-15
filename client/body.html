@@ -2,6 +2,8 @@
 
 {{home "accueil"}}
 
+{{#if has_access}}
+
 <div class="panel panel-default container fill">
 
 	<div class="container-fluid header" style="padding:20px;">
@@ -90,5 +92,9 @@
 		</div>
 	</div>
 </div>
+
+{{else}}
+	{{> lock}}
+{{/if}}
 
 </body>
