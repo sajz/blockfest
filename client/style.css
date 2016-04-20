@@ -1,10 +1,47 @@
 body {
-	background-color: #E2E2E2;
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 16px;
 }
 
-textarea {
-	resize: vertical;
+h2 {
+	font-weight: 600;
+	font-size: 36px;
+	color: #808080;
 }
+
+h3 {
+	font-weight: 400;
+	font-size: 26px;
+}
+
+p {
+	color: #868686;
+}
+
+.site-title {
+	font-weight: 100;
+	font-size: 70px;
+	color: #878787;
+}
+
+.logo {
+	width: 80px;
+	margin-top: 15px;
+}
+
+.navbar-default {
+	background-color: white;
+	border: 0px;
+	padding-bottom: 80px;
+}
+
+
+
+.justified {
+	text-align: justify;
+}
+
 
 .onename {
 	border: 1px solid #CCCCCC;
@@ -30,19 +67,9 @@ textarea {
 }
 
 .container {
-	border-radius:0;
-	margin-left: 10%;
-	width:80%;
-	background-color: white;
-	border-left:0.5px solid #EDEDED;
-	border-right: 0.5px solid #EDEDED;
-	box-shadow: 0px 0px 50px #C6C6C6;
-	padding-left:0px;
-	padding-right:0px;
 }
 
 .container-fill {
-	padding:20px;
 }
 
 .navbar-default {
@@ -90,17 +117,10 @@ textarea {
 	margin-left: 10px;
 }
 
-
-
-
-.exergue {
-	color: #b10000;
-}
-
 .active a{
 	background-color: #CCC !important;
 }
 
- a{
+a {
 	color: #b10000;
 }
