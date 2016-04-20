@@ -42,12 +42,14 @@
 	border: 1px solid white;
 	color: white;
 	font-size: 50px;
+	text-align: center;
 }
 
 .tickets {
 	color: #E1FFA6;
 	font-weight: 600;
 	font-size: 50px;
+	text-align: center;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
