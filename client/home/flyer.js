@@ -16,7 +16,7 @@ Template.flyer.events({
 	}
 });
 
-Template.flyer.rendered = function () {
+Template.flyer.onRendered(function () {
 	var dir = "QmaJyaXHLEdn1ozr1PRdwToV7PDub8ttLAe8xT9Xt47vJk";
 	var request = "https://gateway.ipfs.io/api/v0/object/get?arg=" + dir;
 	Meteor.http.get(request, function (err, res) {
@@ -29,5 +29,7 @@ Template.flyer.rendered = function () {
 			$("#cover").hide();
 			$("#cover").show(0);
 		}
+		else
+			console.log(err);
 	});
-}
+});

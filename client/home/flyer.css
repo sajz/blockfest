@@ -22,7 +22,7 @@
 	opacity: 0;
 }
 .flyer-image:hover #flyer-upload {
-	opacity: 0.7;
+	opacity: 0.9;
 	transition: opacity .25s ease-in-out;
 }
 
