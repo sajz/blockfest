@@ -7,6 +7,50 @@ Accounts.onCreateUser(function (options, user) {
 	return (user);
 });
 
+var ipfsObj = false;
+var fs = Npm.require('fs');
+
+const testIpfs = function () {
+	let started = ipfsObj.start();
+	if (started) {
+		ipfsObj.api.add(new Buffer('random stuff'), function (err, data) {
+			if (!err)
+				console.log('ipfs hash ' + data[0].Hash);
+			else
+				console.log(err);
+		});
+	}
+};
+
+Meteor.startup(function () {
+
+	ipfsObj =  IpfsConnector.getInstance(); //singleton
+	ipfsObj.setLogLevel('info');
+	testIpfs();
+
+	UploadServer.init({
+		tmpDir: process.env.PWD + '/.uploads/tmp',
+		uploadDir: process.env.PWD + '/.uploads/',
+		checkCreateDirectories: true,
+		finished: function (fileInfo, formFields) {
+			console.log(fileInfo);
+			console.log(formFields);
+			fs.readFile(process.env.PWD + '/.uploads' + fileInfo.path, 'utf8', function (err, data) {
+				if (err) {
+					console.log('Error: ' + err);
+					return;
+				}
+				ipfsObj.api.add(new Buffer(data), function (err, data) {
+					if (err)
+						console.log(err);
+					else
+						console.log(data);
+				});
+			});
+		}
+	});
+});
+
 Meteor.publish("users", function () {
 	return (Meteor.users.find());
 });
