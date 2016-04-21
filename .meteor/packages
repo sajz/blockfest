@@ -22,5 +22,6 @@ twbs:bootstrap
 session
 accounts-ui
 accounts-password
-accounts-facebook
 meteortoys:allthings
+tomi:upload-server
+tomi:upload-jquery
