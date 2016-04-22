@@ -17,7 +17,7 @@ Template.flyer.events({
 });
 
 Template.flyer.onRendered(function () {
-	var dir = "QmaJyaXHLEdn1ozr1PRdwToV7PDub8ttLAe8xT9Xt47vJk";
+	var dir = "QmSmjERBMSesWAMPXkzvt8DRYLNWJfHW9WZS9ZVkozgRhL";
 	var request = "https://gateway.ipfs.io/api/v0/object/get?arg=" + dir;
 	Meteor.http.get(request, function (err, res) {
 		if (!err)
