@@ -12,7 +12,11 @@ Template.flyer.helpers({
 Template.flyer.events({
 	"click #flyer-upload": function (event) {
 		event.preventDefault();
-		console.log("coucou");
+		Session.set("upload-flyer", true);
+	},
+	"click #upload-close": function (event) {
+		event.preventDefault();
+		Session.set("upload-flyer", false);
 	}
 });
 
@@ -26,8 +30,6 @@ Template.flyer.onRendered(function () {
 			var rand = Math.floor(Math.random() * (links.length));
 			var src = "http://ipfs.io/ipfs/" + links[rand]["Hash"];
 			$("#cover").attr("src", src);
-			$("#cover").hide();
-			$("#cover").show(0);
 		}
 		else
 			console.log(err);

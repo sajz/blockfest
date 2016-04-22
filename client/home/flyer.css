@@ -1,5 +1,11 @@
+.modal-content {
+	height: 500px;
+	margin-bottom: 10px;
+}
+
 .flyer-container {
 	margin-bottom: 30px;
+	opacity: 1;
 }
 
 .flyer-image {
@@ -8,9 +14,11 @@
 	overflow: hidden;
 }
 .flyer-image-content {
+	opacity: 0;
 	width: 110%;
 	margin-left: -20px;
 	display: block;
+	transition: opacity 2s;
 }
 #flyer-upload {
 	position : absolute;
