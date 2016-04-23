@@ -40,11 +40,15 @@ Template.flyer.events({
 	}
 });
 
+function rgb2hex(rgb){
+	rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+	return (rgb && rgb.length === 4) ? "#" +
+		("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
+		("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
+		("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : '';
+}
+
 Template.flyer.onRendered(function () {
-	$("#flyer-container").fullpage({
-		autoScrolling: false,
-		fitToSection: false
-	});
 	var couples = [
 	{
 		title: {
@@ -100,6 +104,12 @@ Template.flyer.onRendered(function () {
 	$("#flyer-title").css(couples[rand].title);
 	$("#flyer-suptitle").css(couples[rand].suptitle);
 	$("#flyer-subtitle").css(couples[rand].subtitle);
+	Session.set("flyer-color", (rgb2hex($("#flyer-title").css("background-color"))));
+	$("#flyer-container").css("background-color", Session.get("flyer-color"));
+	$("#flyer-container").fullpage({
+		autoScrolling: false,
+		fitToSection: false
+	});
 });
 
 
