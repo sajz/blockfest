@@ -32,6 +32,8 @@ Meteor.startup(function () {
 		tmpDir: process.env.PWD + '/.uploads/tmp',
 		uploadDir: process.env.PWD + '/.uploads/',
 		checkCreateDirectories: true,
+		maxFileSize: 600000,
+		imageTypes: "/.(gif|jpe?g|png)$/i",
 		finished: function (fileInfo, formFields) {
 			console.log(fileInfo);
 			console.log(formFields);
