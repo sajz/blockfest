@@ -40,7 +40,27 @@ Template.flyer.events({
 	}
 });
 
-function rgb2hex(rgb){
+
+Template.flyer.onRendered(function () {
+
+	var couples = getCouples();
+	var rand = Math.floor(Math.random() * (couples.length));
+	$("#flyer-title").css(couples[rand].title);
+	$("#flyer-suptitle").css(couples[rand].suptitle);
+	$("#flyer-subtitle").css(couples[rand].subtitle);
+	var bgcolor = rgb2hex($("#flyer-title").css("background-color"));
+	var fgcolor = rgb2hex($("#flyer-suptitle").css("color"));
+	Session.set("bgcolor", bgcolor);
+
+	$("#flyer-container").css("background-color", bgcolor);
+	$("#flyer-container").fullpage({
+		autoScrolling: false,
+		fitToSection: false
+	});
+	$("#flyer-info").css("background-color", fgcolor);
+});
+
+function rgb2hex(rgb) {
 	rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
 	return (rgb && rgb.length === 4) ? "#" +
 		("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
@@ -48,7 +68,7 @@ function rgb2hex(rgb){
 		("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : '';
 }
 
-Template.flyer.onRendered(function () {
+function getCouples() {
 	var couples = [
 	{
 		title: {
@@ -62,7 +82,6 @@ Template.flyer.onRendered(function () {
 			"color": "black"
 		},
 		subtitle: {
-			"font-size": "40px",
 			"color": "#85707E"
 		}
 	},
@@ -74,10 +93,9 @@ Template.flyer.onRendered(function () {
 			"font-family": "bluebirdRegular",
 			"font-weight": "300",
 			"font-size": "120px",
-			"color": "#F3E4C8"
+			"color": "#F7D89F"
 		},
 		subtitle: {
-			"font-size": "40px",
 			"color": "#9E2F15"
 		}
 	},
@@ -95,24 +113,12 @@ Template.flyer.onRendered(function () {
 			"text-transform": "uppercase"
 		},
 		subtitle: {
-			"font-size": "40px",
 			"color": "white"
 		}
 	}
 	];
-	var rand = Math.floor(Math.random() * (couples.length));
-	$("#flyer-title").css(couples[rand].title);
-	$("#flyer-suptitle").css(couples[rand].suptitle);
-	$("#flyer-subtitle").css(couples[rand].subtitle);
-	Session.set("flyer-color", (rgb2hex($("#flyer-title").css("background-color"))));
-	$("#flyer-container").css("background-color", Session.get("flyer-color"));
-	$("#flyer-container").fullpage({
-		autoScrolling: false,
-		fitToSection: false
-	});
-});
-
-
+	return (couples);
+}
 
 
 
