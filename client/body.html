@@ -6,88 +6,83 @@
 
 <div class="container">
 
-	<div class="container-fluid header" style="padding:20px;">
-		<div class="row">
-			<img src="logo.png" class="logo" />
-			<h3 class="site-title">blockfest</h3>
-			<div class=col-xs-offset-10 style=padding-top:2rem;>
-				{{> loginButtons}}
-			</div>
-		</div>
-	</div>
+	{{#if $eq tab "accueil"}}
+		{{> accueil}}
+	{{/if}}
+	{{#if $eq tab "program"}}
+		{{> program}}
+	{{/if}}
+	{{#if $eq tab "participate"}}
+		{{> participate}}
+	{{/if}}
+	{{#if $eq tab "rules"}}
+		{{> rules}}
+	{{/if}}
+	{{#if $eq tab "team"}}
+		{{> team}}
+	{{/if}}
+	{{#if $eq tab "partners"}}
+		{{> partners}}
+	{{/if}}
+	{{#if $eq tab "info"}}
+		{{> info}}
+	{{/if}}
+	{{#if $eq tab "profile"}}
+		{{> profile}}
+	{{/if}}
 
-	<nav class="navbar navbar-default">
-		<ul class="nav navbar-nav col-sm-12">
-			<li role=presentation
-			id="accueil-tab"
-			class="{{#if $eq tab 'accueil'}}active{{/if}}">
-				<a href=#>Accueil</a>
-			</li>
-			<li role=presentation
-			id="program-tab"
-			class="{{#if $eq tab 'program'}}active{{/if}}">
-				<a href=#>Programme</a>
-			</li>
-			<li role=presentation
-			id="participate-tab"
-			class="{{#if $eq tab 'participate'}}active{{/if}}">
-				<a href=#>Billets</a>
-			</li>
-			<li role=presentation
-			id="rules-tab"
-			class="{{#if $eq tab 'rules'}}active{{/if}}">
-				<a href=#>Règles du jeu</a>
-			</li>
-			<li role=presentation
-			id="team-tab"
-			class="{{#if $eq tab 'team'}}active{{/if}}">
-				<a href=#>Équipe</a>
-			</li>
-			<li role=presentation
-			id="partners-tab"
-			class="{{#if $eq tab 'partners'}}active{{/if}}">
-				<a href=#>Partenaires</a>
-			</li>
-			<li role=presentation
-			id="info-tab"
-			class="{{#if $eq tab 'info'}}active{{/if}}">
-				<a href=#>Infos pratiques</a>
-			</li>
-			{{#if currentUser}}
-			<li role=presentation
-			id="profile-tab"
-			class="{{#if $eq tab 'profile'}}active{{/if}}">
-				<a href=#>Mon profil</a>
-			</li>
-			{{/if}}
-		</ul>
-	</nav>
-	
-			{{#if $eq tab "accueil"}}
-				{{> accueil}}
-			{{/if}}
-			{{#if $eq tab "program"}}
-				{{> program}}
-			{{/if}}
-			{{#if $eq tab "participate"}}
-				{{> participate}}
-			{{/if}}
-			{{#if $eq tab "rules"}}
-				{{> rules}}
-			{{/if}}
-			{{#if $eq tab "team"}}
-				{{> team}}
-			{{/if}}
-			{{#if $eq tab "partners"}}
-				{{> partners}}
-			{{/if}}
-			{{#if $eq tab "info"}}
-				{{> info}}
-			{{/if}}
-			{{#if $eq tab "profile"}}
-				{{> profile}}
-			{{/if}}
 </div>
+
+	<footer>
+		<nav class="navbar navbar-inverse navbar-fixed-bottom">
+			<div class=container>
+			<ul class="nav navbar-nav">
+				<li role=presentation
+				id="accueil-tab"
+				class="{{#if $eq tab 'accueil'}}active{{/if}}">
+					<a href=#>Accueil</a>
+				</li>
+				<li role=presentation
+				id="program-tab"
+				class="{{#if $eq tab 'program'}}active{{/if}}">
+					<a href=#>Programme</a>
+				</li>
+				<li role=presentation
+				id="participate-tab"
+				class="{{#if $eq tab 'participate'}}active{{/if}}">
+					<a href=#>Billets</a>
+				</li>
+				<li role=presentation
+				id="rules-tab"
+				class="{{#if $eq tab 'rules'}}active{{/if}}">
+					<a href=#>Règles du jeu</a>
+				</li>
+				<li role=presentation
+				id="team-tab"
+				class="{{#if $eq tab 'team'}}active{{/if}}">
+					<a href=#>Équipe</a>
+				</li>
+				<li role=presentation
+				id="partners-tab"
+				class="{{#if $eq tab 'partners'}}active{{/if}}">
+					<a href=#>Partenaires</a>
+				</li>
+				<li role=presentation
+				id="info-tab"
+				class="{{#if $eq tab 'info'}}active{{/if}}">
+					<a href=#>Infos pratiques</a>
+				</li>
+				{{#if currentUser}}
+				<li role=presentation
+				id="profile-tab"
+				class="{{#if $eq tab 'profile'}}active{{/if}}">
+					<a href=#>Mon profil</a>
+				</li>
+				{{/if}}
+			</ul>
+			</div>
+		</nav>
+	</footer>
 
 {{else}}
 	{{> lock}}
