@@ -20,12 +20,12 @@ Template.flyer.helpers({
 });
 
 Template.flyer.events({
-	"click #flyer-upload": function (event) {
+	"click #ipfs-toggle": function (event) {
 		event.preventDefault();
 		$("#flyer-display").css({
 			"display": "none"
 		});
-		$("#flyer-upload-container").css({
+		$("#flyer-upload").css({
 			"display": "block"
 		});
 	},
@@ -34,7 +34,7 @@ Template.flyer.events({
 		$("#flyer-display").css({
 			"display": "block"
 		});
-		$("#flyer-upload-container").css({
+		$("#flyer-upload").css({
 			"display": "none"
 		});
 	}
@@ -58,6 +58,7 @@ Template.flyer.onRendered(function () {
 		fitToSection: false
 	});
 	$("#flyer-info").css("background-color", fgcolor);
+	$("h2").css("color", bgcolor);
 });
 
 function rgb2hex(rgb) {

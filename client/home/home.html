@@ -1,27 +1,14 @@
 <template name="accueil">
 
-	<div class=row>
-		<div class="col-lg-9 home-intro">
-			{{> home_intro}}
-		</div>
-		<div class="col-lg-3">
-			{{> home_buttons}}
-		</div>
-	</div>
+	{{> home_intro}}
 
-	<div class=row style=margin-top:20px;>
-		<div class="col-lg-6">
-			{{> home_portrait}}
-		</div>
-		<div class="col-lg-6">
-			{{> home_article}}
-		</div>
-	</div>
+	<h2>Pendant Le Blockfest, vous pouvez...</h2>
+
 
 	<div class="row home-incentive">
-		<h2 class="col-lg-7">
-			BlockFest 116
-		</h2>
+		<div class="col-lg-7" id=incentive-title>
+			BlockFest .16
+		</div>
 		<div class="remaining col-lg-2">
 			j - {{remainingDays}}
 		</div>
