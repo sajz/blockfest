@@ -1,34 +1,37 @@
 <template name="flyer">
 
-	<div class="flyer-container" id=fullpage>
+	<div id="flyer-container">
 		<div class="section">
 			<div class="slide">
-				<div class="panel panel-default lg-col-10"
-					id=flyer-upload-container>
-					<div class=panel-heading>
-						Contribuez en téléversant une couverture via IPFS
-						<button type="button" class=close id="upload-close">
-							<span aria-hidden="true">&times;</span>
-						</button>
+				<div class=container>
+					<div class="panel panel-default" id=flyer-upload>
+						<div class=panel-heading>
+							Contribuez en téléversant une couverture via IPFS
+							<button type="button" class=close id="upload-close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class=panel-body>
+							{{> flyer_upload}}
+						</div>
 					</div>
-					<div class=panel-body>
-						{{> flyer_upload}}
-					</div>
-				</div>
-				<div id=flyer-display class="container">
-					<div class="flyer-image">
-						<img src={{coverImage}} onload="this.style.opacity='1';"
-							  class="flyer-image-content" id="cover" />
-						<a href="#"><img src={{ipfsImage}} id="flyer-upload" /></a>
-					</div>
-					<div class="flyer-title">
-						<img src={{titleImage}} onload="this.style.opacity='1';" 
-							  class="flyer-image-content" />
-					</div>
-					<div class="flyer-info">
-						<span id=span-left>du 6 au 11 juin 2016</span>
-						<span id=span-center>École 42, Paris</span>
-						<span id=span-right>#blockfest</span>
+					<div id=flyer-display>
+						<div id="flyer-image">
+							<img src={{coverImage}} onload="this.style.opacity='1';"
+							   id="cover" />
+							<a href="#"><img src={{ipfsImage}} id="ipfs-toggle" /></a>
+						</div>
+						<div id="flyer-title">
+							<div id=flyer-suptitle>
+								Le <strong>Block</strong>Fest .16
+							</div>
+							<div id=flyer-subtitle>
+								du 7 au 12 juin - École 42
+							</div>
+						</div>
+						<div id="flyer-info">
+							Une semaine pour comprendre, pratiquer, échanger et documenter les blockchains 
+						</div>
 					</div>
 				</div>
 			</div>

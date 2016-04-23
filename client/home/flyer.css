@@ -1,8 +1,8 @@
-#fullpage {
+#flyer-container {
 	background-color: black;
 }
 
-#flyer-upload-container {
+#flyer-upload {
 	height: 500px;
 	display: none;
 }
@@ -11,23 +11,19 @@
 	display: block;
 }
 
-.flyer-container {
-	margin-bottom: 30px;
-}
-
-.flyer-image {
-	height: 185px;
+#flyer-image {
+	height: 250px;
 	position: relative;
 	overflow: hidden;
+	border: 1px solid white;
 }
-.flyer-image-content {
+#cover {
 	opacity: 0;
-	width: 110%;
-	margin-left: -20px;
+	width: 100%;
 	display: block;
 	transition: opacity 2s;
 }
-#flyer-upload {
+#ipfs-toggle {
 	position : absolute;
 	display: block;
 	top: 15px;
@@ -36,23 +32,26 @@
 	z-index: 100;
 	opacity: 0;
 }
-.flyer-image:hover #flyer-upload {
+#flyer-image:hover #ipfs-toggle {
 	opacity: 0.8;
 	transition: opacity .25s ease-in-out;
 }
 
-.flyer-title {
+#flyer-title {
 	height: 250px;
 	position: relative;
 	overflow: hidden;
+	text-align:center;
+	border: 1px solid white;
 }
 
-.flyer-info {
+#flyer-info {
 	height: 65px;
 	background-color: #E6E6E6;
 	position: relative;
 	font-size: 38px;
 	padding-top: 5px;
+	border: 1px solid white;
 }
 #span-left {
 	left: 10px;
