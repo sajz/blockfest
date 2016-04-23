@@ -3,7 +3,8 @@
 	<div class="flyer-container" id=fullpage>
 		<div class="section">
 			<div class="slide">
-				<div class="panel panel-default" id=flyer-upload-container>
+				<div class="panel panel-default lg-col-10"
+					id=flyer-upload-container>
 					<div class=panel-heading>
 						Contribuez en téléversant une couverture via IPFS
 						<button type="button" class=close id="upload-close">
@@ -14,7 +15,7 @@
 						{{> flyer_upload}}
 					</div>
 				</div>
-				<div id=flyer-display>
+				<div id=flyer-display class="container">
 					<div class="flyer-image">
 						<img src={{coverImage}} onload="this.style.opacity='1';"
 							  class="flyer-image-content" id="cover" />
@@ -34,7 +35,4 @@
 		</div>
 	</div>
 
-</template>
-
-<template name="modal">
 </template>
