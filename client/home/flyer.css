@@ -1,7 +1,18 @@
+/*
 .modal-content {
 	height: 500px;
 	margin-bottom: 10px;
 	box-shadow: 0 5px 15px rgba(0,0,0,0);
+}
+*/
+
+#flyer-upload-container {
+	height: 500px;
+	display: none;
+}
+
+#flyer-display {
+	display: block;
 }
 
 .flyer-container {

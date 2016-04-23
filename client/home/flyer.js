@@ -27,10 +27,27 @@ Template.flyer.helpers({
 Template.flyer.events({
 	"click #flyer-upload": function (event) {
 		event.preventDefault();
-		Session.set("upload-flyer", true);
+		$("#flyer-display").css({
+			"display": "none"
+		});
+		$("#flyer-upload-container").css({
+			"display": "block"
+		});
 	},
 	"click #upload-close": function (event) {
 		event.preventDefault();
-		Session.set("upload-flyer", false);
+		$("#flyer-display").css({
+			"display": "block"
+		});
+		$("#flyer-upload-container").css({
+			"display": "none"
+		});
 	}
+});
+
+Template.flyer.onRendered(function () {
+	$("#fullpage").fullpage({
+		autoScrolling: false,
+		fitToSection: false
+	});
 });
