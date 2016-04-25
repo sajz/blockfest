@@ -76,6 +76,12 @@
 				class="{{#if $eq tab 'info'}}active{{/if}}">
 					<a href=#>Infos pratiques</a>
 				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li role=presentation
+				id="">
+					<a href="#" id=countdown>J - {{countDown}}</a>
+				</li>
 				{{#if currentUser}}
 				<li role=presentation
 				id="profile-tab"
