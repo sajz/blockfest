@@ -39,7 +39,7 @@
 	font-weight: 500;
 }
 
-#picto {
+.svg {
 	fill: red;
 	width: 60px;
 	height: 60px;
