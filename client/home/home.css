@@ -1,14 +1,76 @@
-.home-intro {
+.inline {
+	display: inline;
+	float: left;
 }
 
 .centered {
 	text-align: center;
 }
 
+.div-center {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#home-header {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.header {
+	display: inline-block;
+	height: 80px;
+}
+
+#join-types {
+	padding-bottom: 50px;
+}
+.join-group {
+	width: 160px;
+	display: inline;
+	float: left;
+}
+
+#stay-tuned {
+	padding-top: 25px;
+	color: white;
+	font-weight: 500;
+}
+
 #picto {
 	fill: red;
 	width: 60px;
 	height: 60px;
+}
+
+#team {
+	margin-top: 50px;
+	display: block;
+	height: 150px;
+	white-space:nowrap;
+	overflow-x: scroll;
+}
+
+.team-entry {
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 100px;
+}
+
+#partners {
+	margin-top: 50px;
+	display: block;
+	height: 150px;
+	white-space:nowrap;
+	overflow-x: scroll;
+}
+
+.partner-entry {
+	margin-top: 20px;
+	margin-left: 20px;
+	height: 100px;
 }
 
 
