@@ -1,6 +1,16 @@
 .home-intro {
-	padding-right: 50px;
 }
+
+.centered {
+	text-align: center;
+}
+
+#picto {
+	fill: red;
+	width: 60px;
+	height: 60px;
+}
+
 
 .home-incentive {
 	margin-top: 40px;
