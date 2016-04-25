@@ -24,6 +24,7 @@
 	height: 100%;
 	display: block;
 	transition: opacity 2s;
+	border: 1px solid black;
 }
 #ipfs-toggle {
 	position : absolute;
@@ -57,7 +58,8 @@
 	font-size: 30px;
 	text-align: center;
 	padding-top: 10px;
-	background-color: #434343;
+	color: #303030;
+	background-color: #D6D6D6;
 }
 #span-left {
 	left: 10px;
