@@ -57,8 +57,9 @@ Template.flyer.onRendered(function () {
 		autoScrolling: false,
 		fitToSection: false
 	});
-	$("#flyer-info").css("background-color", fgcolor);
+	//$("#flyer-info").css("background-color", fgcolor);
 	$("h2").css("color", bgcolor);
+	$("#stay-tuned-streamer").css("background-color", bgcolor);
 });
 
 function rgb2hex(rgb) {
