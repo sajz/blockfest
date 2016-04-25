@@ -52,7 +52,7 @@ Template.flyer.onRendered(function () {
 	var fgcolor = rgb2hex($("#flyer-suptitle").css("color"));
 	Session.set("bgcolor", bgcolor);
 
-	$("#flyer-container").css("background-color", bgcolor);
+	//$("#flyer-container").css("background-color", bgcolor);
 	$("#flyer-container").fullpage({
 		autoScrolling: false,
 		fitToSection: false
