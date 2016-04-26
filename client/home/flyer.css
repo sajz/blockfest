@@ -17,6 +17,7 @@
 	height: 330px;
 	position: relative;
 	overflow: hidden;
+	background: black;
 }
 #cover {
 	opacity: 0;
@@ -41,25 +42,35 @@
 }
 
 #flyer-title {
-	height: 250px;
+	height: 156px;
 	position: relative;
 	overflow: hidden;
 	text-align:center;
 }
+#flyer-suptitle {
+	margin-top: -32px;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 0px;
+}
 
 #flyer-subtitle {
-	margin-top: -20px;
-	font-size: 50px;
+	margin-top: -40px;
+	font-size: 27px;
+	text-align: center;
+	padding-left: 27px;
+	margin-bottom: 12px;
 }
 
 #flyer-info {
-	height: 65px;
+	height: 50px;
 	position: relative;
-	font-size: 30px;
+	font-size: 28px;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 5px;
 	color: #303030;
 	background-color: #D6D6D6;
+	padding-left: 27px;
 }
 #span-left {
 	left: 10px;

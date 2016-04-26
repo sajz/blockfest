@@ -81,8 +81,8 @@ function getCouples() {
 		},
 		suptitle: {
 			"font-family": "unique",
-			"font-weight": "300",
-			"font-size": "120px",
+			"font-weight": "400",
+			"font-size": "130px",
 			"text-transform": "uppercase",
 			"color": "black"
 		},
@@ -109,11 +109,11 @@ function getCouples() {
 			"background-color": "#188ACC"
 		},
 		suptitle: {
-			"padding-top": "40px",
+			"padding-top": "30px",
 			"padding-bottom": "20px",
 			"font-family": "retroscape",
-			"font-weight": "300",
-			"font-size": "70px",
+			"font-weight": "400",
+			"font-size": "75px",
 			"color": "#FDF600",
 			"text-transform": "uppercase"
 		},
