@@ -74,61 +74,7 @@ function rgb2hex(rgb) {
 }
 
 function getCouples() {
-	var couples = [	
-	{
-		title: {
-			"background-color": "#71CE55"
-		},
-		suptitle: {
-			"font-family": "judson",
-			"font-weight": "900",
-			"font-size": "120px",
-			"text-transform": "uppercase",
-			"color": "#FFD369",
-			"margin-top": "-38px",
-			"letter-spacing": "8px"
-		},
-		subtitle: {
-			"color": "#FFD369",
-			"margin-top": "-41px"
-		}
-	},		
-	{
-		title: {
-			"background-color": "#854AA1"
-		},
-		suptitle: {
-			"font-family": "pt-mono",
-			"font-weight": "400",
-			"font-size": "130px",
-			"text-transform": "uppercase",
-			"color": "black",
-			"margin-top": "-30px",
-			"letter-spacing": "8px"
-		},
-		subtitle: {
-			"color": "#854AA1",
-			"margin-top": "-41px"
-		}	
-	},
-	{
-		title: {
-			"background-color": "#FFA239"
-		},
-		suptitle: {
-			"font-family": "dosis",
-			"font-weight": "400",
-			"font-size": "130px",
-			"text-transform": "uppercase",
-			"color": "black",
-			"margin-top": "-30px",
-			"letter-spacing": "8px"
-		},
-		subtitle: {
-			"color": "#FFA239",
-			"margin-top": "-41px"
-		}
-	},
+	var couples = [
 	{
 		title: {
 			"background-color": "#E8C3DD"
@@ -182,7 +128,72 @@ function getCouples() {
 			"color": "white",
 			"margin-top": "-29px"
 		}
+	},
+	{
+		title: {
+			"background-color": "#854AA1"
+		},
+		suptitle: {
+/*			"padding-top": "30px",
+			"padding-bottom": "20px",*/
+			"font-family": "Averia Libre",
+			"font-weight": "400",
+			"font-size": "105px",
+			"color": "White",
+			"margin-top": "-22px",
+			"line-height": "1.4",
+			"text-transform": "uppercase"
+		},
+		subtitle: {
+			"color": "white",
+			"margin-top": "-17px"
+		}
+	},
+		{
+		title: {
+			"background-color": "#FFA239"
+		},
+		suptitle: {
+/*			"padding-top": "30px",
+			"padding-bottom": "20px",*/
+			"font-family": "DosisBold",
+			"font-weight": "bold",
+   		 	"font-style": "normal",
+			"font-size": "105px",
+			"color": "black",
+			"margin-top": "-22px",
+			"line-height": "1.4",
+			"letter-spacing": "12px",
+			"text-transform": "uppercase"
+		},
+		subtitle: {
+			"color": "black",
+			"margin-top": "-17px"
+		}
 	}
+/*	{
+		title: {
+			"background-color": "#FFA239"
+		},
+		suptitle: {
+/*			"padding-top": "30px",
+			"padding-bottom": "20px",
+			"font-family": "DosisBold",
+			"font-weight": "bold",
+   		 	"font-style": "normal",
+			"font-size": "105px",
+			"color": "black",
+			"margin-top": "-22px",
+			"line-height": "1.4",
+			"letter-spacing": "12px",
+			"text-transform": "uppercase"
+		},
+		subtitle: {
+			"color": "black",
+			"margin-top": "-17px"
+		}
+	},*/
+		
 	];
 	return (couples);
 }
