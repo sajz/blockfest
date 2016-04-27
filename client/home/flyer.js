@@ -3,7 +3,7 @@ Template.flyer.helpers({
 		return ("https://upload.wikimedia.org/wikipedia/en/1/18/Ipfs-logo-1024-ice-text.png");
 	},
 	coverImage: function () {
-		var dir = "QmSmjERBMSesWAMPXkzvt8DRYLNWJfHW9WZS9ZVkozgRhL";
+		var dir = "QmPW997svo5xAamfhv3jiWNVrgMS8xVUqxFSDEc7xhoNkL";
 		var request = "https://gateway.ipfs.io/api/v0/object/get?arg=" + dir;
 		Meteor.http.get(request, function (err, res) {
 			if (!err)
