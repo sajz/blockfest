@@ -59,6 +59,10 @@ Template.flyer.onRendered(function () {
 	});
 	$("h2").css("color", bgcolor);
 	$("#stay-tuned-streamer").css("background-color", bgcolor);
+	$(".navbar-inverse .navbar-nav > .active > a").css({
+		"background-color": bgcolor,
+		"color": "black"
+	});
 
 	jQuery('img.svg').each(function ()
 	{

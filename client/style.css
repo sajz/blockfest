@@ -21,6 +21,10 @@ p {
 	color: #868686;
 }
 
+nav > .active > a {
+	background-color: white;
+}
+
 #loginButtons {
 	padding-top: 13px;
 	padding-left: 30px;
