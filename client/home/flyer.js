@@ -84,10 +84,13 @@ function getCouples() {
 			"font-weight": "400",
 			"font-size": "130px",
 			"text-transform": "uppercase",
-			"color": "black"
+			"color": "black",
+			"margin-top": "-30px",
+			"letter-spacing": "8px"
 		},
 		subtitle: {
-			"color": "#85707E"
+			"color": "#85707E",
+			"margin-top": "-41px"
 		}
 	},
 	{
@@ -97,11 +100,14 @@ function getCouples() {
 		suptitle: {
 			"font-family": "bluebirdRegular",
 			"font-weight": "300",
-			"font-size": "120px",
-			"color": "#F7D89F"
+			"font-size": "124px",
+			"color": "#F7D89F",
+			"letter-spacing": "12px",
+			"margin-top": "-22px"
 		},
 		subtitle: {
-			"color": "#9E2F15"
+			"color": "#9E2F15",
+			"margin-top": "-42px"
 		}
 	},
 	{
@@ -115,10 +121,12 @@ function getCouples() {
 			"font-weight": "400",
 			"font-size": "75px",
 			"color": "#FDF600",
+			"margin-top": "-22px",
 			"text-transform": "uppercase"
 		},
 		subtitle: {
-			"color": "white"
+			"color": "white",
+			"margin-top": "-29px"
 		}
 	}
 	];

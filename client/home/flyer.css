@@ -1,5 +1,5 @@
 #flyer-container {
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 	transition: opacity 1s ease-out;
 }
 
@@ -11,6 +11,7 @@
 
 #flyer-display {
 	display: block;
+	margin-top: -40px;
 }
 
 #flyer-image {
@@ -48,8 +49,8 @@
 	text-align:center;
 }
 #flyer-suptitle {
-	margin-top: -32px;
-	font-size: 30px;
+/*	margin-top: -32px;*/
+/*	font-size: 30px;*/
 	text-align: center;
 	margin-bottom: 0px;
 }
@@ -58,8 +59,7 @@
 	margin-top: -40px;
 	font-size: 27px;
 	text-align: center;
-	padding-left: 27px;
-	margin-bottom: 12px;
+/*	margin-bottom: 12px;*/
 }
 
 #flyer-info {
@@ -70,7 +70,6 @@
 	padding-top: 5px;
 	color: #303030;
 	background-color: #D6D6D6;
-	padding-left: 27px;
 }
 #span-left {
 	left: 10px;
