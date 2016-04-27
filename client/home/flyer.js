@@ -91,7 +91,8 @@ function getCouples() {
 		subtitle: {
 			"color": "#71CE55",
 			"margin-top": "-41px"
-		}		
+		}
+	},		
 	{
 		title: {
 			"background-color": "#854AA1"
@@ -109,6 +110,7 @@ function getCouples() {
 			"color": "#854AA1",
 			"margin-top": "-41px"
 		}	
+	},
 	{
 		title: {
 			"background-color": "#FFA239"
@@ -125,7 +127,8 @@ function getCouples() {
 		subtitle: {
 			"color": "#FFA239",
 			"margin-top": "-41px"
-		},
+		}
+	},
 	{
 		title: {
 			"background-color": "#E8C3DD"
