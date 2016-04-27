@@ -26,7 +26,6 @@
 	height: 100%;
 	display: block;
 	transition: opacity 2s;
-	border: 1px solid black;
 }
 #ipfs-toggle {
 	position : absolute;
@@ -47,6 +46,7 @@
 	position: relative;
 	overflow: hidden;
 	text-align:center;
+	border: 1px solid #D6D6D6;
 }
 #flyer-suptitle {
 /*	margin-top: -32px;*/

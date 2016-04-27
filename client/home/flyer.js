@@ -52,17 +52,13 @@ Template.flyer.onRendered(function () {
 	var fgcolor = rgb2hex($("#flyer-suptitle").css("color"));
 	Session.set("bgcolor", bgcolor);
 
-	//$("#flyer-container").css("background-color", bgcolor);
+	$("#flyer-container").css("background-color", bgcolor);
 	$("#flyer-container").fullpage({
 		autoScrolling: false,
 		fitToSection: false
 	});
-	//$("#flyer-info").css("background-color", fgcolor);
 	$("h2").css("color", bgcolor);
 	$("#stay-tuned-streamer").css("background-color", bgcolor);
-	$("#cover").css({
-		"border-color": bgcolor
-	});
 });
 
 function rgb2hex(rgb) {
