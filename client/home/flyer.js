@@ -81,15 +81,15 @@ function getCouples() {
 		},
 		suptitle: {
 			"font-family": "judson",
-			"font-weight": "400",
-			"font-size": "130px",
+			"font-weight": "900",
+			"font-size": "120px",
 			"text-transform": "uppercase",
-			"color": "black",
-			"margin-top": "-30px",
+			"color": "#FFD369",
+			"margin-top": "-38px",
 			"letter-spacing": "8px"
 		},
 		subtitle: {
-			"color": "#71CE55",
+			"color": "#FFD369",
 			"margin-top": "-41px"
 		}
 	},		
