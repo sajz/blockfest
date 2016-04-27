@@ -70,7 +70,61 @@ function rgb2hex(rgb) {
 }
 
 function getCouples() {
-	var couples = [
+	var couples = [	
+	{
+		title: {
+			"background-color": "#71CE55"
+		},
+		suptitle: {
+			"font-family": "judson",
+			"font-weight": "400",
+			"font-size": "130px",
+			"text-transform": "uppercase",
+			"color": "black",
+			"margin-top": "-30px",
+			"letter-spacing": "8px"
+		},
+		subtitle: {
+			"color": "#71CE55",
+			"margin-top": "-41px"
+		}
+	},		
+	{
+		title: {
+			"background-color": "#854AA1"
+		},
+		suptitle: {
+			"font-family": "pt-mono",
+			"font-weight": "400",
+			"font-size": "130px",
+			"text-transform": "uppercase",
+			"color": "black",
+			"margin-top": "-30px",
+			"letter-spacing": "8px"
+		},
+		subtitle: {
+			"color": "#854AA1",
+			"margin-top": "-41px"
+		}	
+	},
+	{
+		title: {
+			"background-color": "#FFA239"
+		},
+		suptitle: {
+			"font-family": "dosis",
+			"font-weight": "400",
+			"font-size": "130px",
+			"text-transform": "uppercase",
+			"color": "black",
+			"margin-top": "-30px",
+			"letter-spacing": "8px"
+		},
+		subtitle: {
+			"color": "#FFA239",
+			"margin-top": "-41px"
+		}
+	},
 	{
 		title: {
 			"background-color": "#E8C3DD"
