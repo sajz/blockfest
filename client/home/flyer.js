@@ -43,8 +43,8 @@ Template.flyer.events({
 
 Template.flyer.onRendered(function () {
 
-	var couples = getCouples();
-	var rand = Math.floor(Math.random() * (couples.length));
+	var couples	= getCouples();
+	var rand	= Math.floor(Math.random() * (couples.length));
 	$("#flyer-title").css(couples[rand].title);
 	$("#flyer-suptitle").css(couples[rand].suptitle);
 	$("#flyer-subtitle").css(couples[rand].subtitle);
@@ -59,6 +59,26 @@ Template.flyer.onRendered(function () {
 	});
 	$("h2").css("color", bgcolor);
 	$("#stay-tuned-streamer").css("background-color", bgcolor);
+
+	jQuery('img.svg').each(function ()
+	{
+		var $img = jQuery(this);
+		var imgID = $img.attr('id');
+		var imgClass = $img.attr('class');
+		var imgURL = $img.attr('src');
+
+		jQuery.get(imgURL, function(data)
+		{
+			var $svg = jQuery(data).find('svg');
+			if(typeof imgID !== 'undefined')
+				$svg = $svg.attr('id', imgID);
+			if(typeof imgClass !== 'undefined')
+				$svg = $svg.attr('class', imgClass+' replaced-svg');
+			$svg = $svg.removeAttr('xmlns:a');
+			$img.replaceWith($svg);
+			$svg.attr("fill", bgcolor);
+		}, 'xml');
+	});
 });
 
 function rgb2hex(rgb) {

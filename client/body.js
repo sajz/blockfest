@@ -38,6 +38,7 @@ Template.body.events({
 });
 
 Template.body.rendered = function () {
+
 	Meteor.call("eventbrite", function (err, data) {
 		if (!err) {
 			Session.set("event", data);
