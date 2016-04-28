@@ -122,8 +122,9 @@
 }
 
 #sujet {
+	padding-top: 7px;
 	padding-left:20px;
 	font-size: 40px;
 	font-weight: 600;
-	font-color: red;
+	color: red;
 }
