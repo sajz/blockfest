@@ -3,7 +3,7 @@ Template.flyer.helpers({
 		return ("https://upload.wikimedia.org/wikipedia/en/1/18/Ipfs-logo-1024-ice-text.png");
 	},
 	coverImage: function () {
-		var dir = "QmSmjERBMSesWAMPXkzvt8DRYLNWJfHW9WZS9ZVkozgRhL";
+		var dir = "QmPW997svo5xAamfhv3jiWNVrgMS8xVUqxFSDEc7xhoNkL";
 		var request = "https://gateway.ipfs.io/api/v0/object/get?arg=" + dir;
 		Meteor.http.get(request, function (err, res) {
 			if (!err)
@@ -43,8 +43,8 @@ Template.flyer.events({
 
 Template.flyer.onRendered(function () {
 
-	var couples = getCouples();
-	var rand = Math.floor(Math.random() * (couples.length));
+	var couples	= getCouples();
+	var rand	= Math.floor(Math.random() * (couples.length));
 	$("#flyer-title").css(couples[rand].title);
 	$("#flyer-suptitle").css(couples[rand].suptitle);
 	$("#flyer-subtitle").css(couples[rand].subtitle);
@@ -52,16 +52,36 @@ Template.flyer.onRendered(function () {
 	var fgcolor = rgb2hex($("#flyer-suptitle").css("color"));
 	Session.set("bgcolor", bgcolor);
 
-	//$("#flyer-container").css("background-color", bgcolor);
+	$("#flyer-container").css("background-color", bgcolor);
 	$("#flyer-container").fullpage({
 		autoScrolling: false,
 		fitToSection: false
 	});
-	//$("#flyer-info").css("background-color", fgcolor);
 	$("h2").css("color", bgcolor);
 	$("#stay-tuned-streamer").css("background-color", bgcolor);
-	$("#cover").css({
-		"border-color": bgcolor
+	$(".navbar-inverse .navbar-nav > .active > a").css({
+		"background-color": bgcolor,
+		"color": "black"
+	});
+
+	jQuery('img.svg').each(function ()
+	{
+		var $img = jQuery(this);
+		var imgID = $img.attr('id');
+		var imgClass = $img.attr('class');
+		var imgURL = $img.attr('src');
+
+		jQuery.get(imgURL, function(data)
+		{
+			var $svg = jQuery(data).find('svg');
+			if(typeof imgID !== 'undefined')
+				$svg = $svg.attr('id', imgID);
+			if(typeof imgClass !== 'undefined')
+				$svg = $svg.attr('class', imgClass+' replaced-svg');
+			$svg = $svg.removeAttr('xmlns:a');
+			$img.replaceWith($svg);
+			$svg.attr("fill", bgcolor);
+		}, 'xml');
 	});
 });
 
