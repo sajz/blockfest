@@ -93,7 +93,7 @@ function getCouples() {
 	var couples = [
 	{
 		title: {
-			"background-color": "#E8C3DD"
+				"background-color": "#CD91BA"
 		},
 		suptitle: {
 			"font-family": "unique",
@@ -105,7 +105,7 @@ function getCouples() {
 			"letter-spacing": "8px"
 		},
 		subtitle: {
-			"color": "#85707E",
+			"color": "black",
 			"margin-top": "-41px"
 		}
 	},
@@ -147,7 +147,7 @@ function getCouples() {
 	},
 	{
 		title: {
-			"background-color": "#854AA1"
+			"background-color": "#644CB1"
 		},
 		suptitle: {
 /*			"padding-top": "30px",
