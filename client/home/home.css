@@ -21,6 +21,7 @@
 
 .header {
 	display: inline-block;
+	margin-top: 40px;
 	height: 80px;
 }
 
@@ -117,4 +118,14 @@
 	background-color: #E6E6E6;
 	font-weight: 300;
 	font-size: 22px;
+}
+#h4intro {
+	width: 600px;
+}
+
+#sujet {
+	padding-left:20px;
+	font-size: 40px;
+	font-weight: 600;
+	font-color: red;
 }
