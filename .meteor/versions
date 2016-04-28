@@ -23,6 +23,8 @@ caching-html-compiler@1.0.6
 callback-hook@1.0.8
 check@1.2.1
 coffeescript@1.0.17
+d3@1.0.0
+d3js:d3@3.5.8
 dburles:mongo-collection-instances@0.3.4
 ddp@1.2.5
 ddp-client@1.2.7
@@ -31,6 +33,7 @@ ddp-rate-limiter@1.0.4
 ddp-server@1.2.6
 deps@1.0.12
 diff-sequence@1.0.5
+dsyko:d3-cloud@1.0.6
 ecmascript@0.4.3
 ecmascript-runtime@0.2.10
 ejson@1.0.11

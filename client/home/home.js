@@ -8,5 +8,4 @@ Template.accueil.helpers({
 });
 
 Template.accueil.onRendered(function () {
-
 });
