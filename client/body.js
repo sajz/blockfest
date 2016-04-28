@@ -21,6 +21,11 @@ Template.body.helpers({
 	},
 	tab:		function () {
 		return (Session.get("tab"));
+	},
+	getLogo: function () {
+		var logo = "logo/logo";
+		var rand = Math.floor(Math.random() * 14);
+		return (logo + rand + ".svg");
 	}
 });
 
@@ -37,11 +42,11 @@ Template.body.events({
 
 Template.body.rendered = function () {
 
-	var nav = ".navbar-inverse .navbar-nav > .active > a";
-	$(nav + ", " + nav + ":hover, " + nav + ":focus").css({
-		"background-color": "red",
-		"color": "black"
-	});
+	//var nav = ".navbar-inverse .navbar-nav > .active > a";
+	//$(nav + ", " + nav + ":hover, " + nav + ":focus").css({
+	//	"background-color": "red",
+	//	"color": "black"
+	//});
 
 	Meteor.call("eventbrite", function (err, data) {
 		if (!err) {

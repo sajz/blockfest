@@ -28,8 +28,9 @@ p {
 	color: #868686;
 }
 
-nav > .active > a {
-	background-color: white;
+#logo {
+	padding-left: 3px;
+	height: 20px;
 }
 
 #loginButtons {
