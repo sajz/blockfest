@@ -2,6 +2,13 @@ Template.registerHelper("session", function (key) {
 	return (Session.get(key));
 });
 
+Template.registerHelper("countDown", function () {
+	var blockfest = new Date(2016, 5, 7);
+	var diff = blockfest - Date.now();
+	var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+	return (days);
+});
+
 Template.body.helpers({
 	has_access:	function () {
 		if (Session.get("pwd") == "bisou")
@@ -14,15 +21,6 @@ Template.body.helpers({
 	},
 	tab:		function () {
 		return (Session.get("tab"));
-	},
-	session:	function (key) {
-		return (Session.get(key));
-	},
-	countDown: function () {
-		var blockfest = new Date(2016, 5, 7);
-		var diff = blockfest - Date.now();
-		var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-		return (days);
 	}
 });
 
@@ -38,6 +36,12 @@ Template.body.events({
 });
 
 Template.body.rendered = function () {
+
+	var nav = ".navbar-inverse .navbar-nav > .active > a";
+	$(nav + ", " + nav + ":hover, " + nav + ":focus").css({
+		"background-color": "red",
+		"color": "black"
+	});
 
 	Meteor.call("eventbrite", function (err, data) {
 		if (!err) {
