@@ -128,6 +128,10 @@
 	width: 600px;
 }
 
+#nuage {
+	width: 100%;
+}
+
 #sujet {
 	margin-top: 17px;
 	padding-left: 10px;
