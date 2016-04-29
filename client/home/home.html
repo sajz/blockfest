@@ -188,17 +188,66 @@
 	</div>
 
 	<div id=team>
-		<img src=milad.jpg class="img-circle team-entry">
-		<!-- texte : Milad Doueihi - Historien des religions - Université de Paris-Sorbonne (https://fr.wikipedia.org/wiki/Milad_Doueihi)-->
-		<img src=herve.jpg class="img-circle team-entry">
-		<!-- texte : Hervé Moal - Directeur du Développement et de l'innovation chez ARP-Astrance (Directeur du Développement et de l'innovation)-->
+		{{#each teamMembersList}}
+		{{> team_member}}
+		{{/each}}
 	</div>
-
-<!--	<div id=partners>
-		<img src=mons.png class="partner-entry">
-	</div>
-
-	<div style=margin-bottom:150px;></div>
--->
 
 </template>
+
+<template name="team_member">
+	<div class="team-member inline">
+		<img src={{filename}} class="img-circle team-entry inline">
+		<div class="team-member-details inline">
+			<div class=member-name>
+				<a href={{link}}>{{name}}</a>
+			</div>
+			<div class=member-employment>
+				{{employment}}
+			</div>
+			<div class=member-place>
+				{{workingPlace}}
+			</div>
+		</div>
+	</div>
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

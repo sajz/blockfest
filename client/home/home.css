@@ -55,15 +55,27 @@
 #team {
 	margin-top: 50px;
 	display: block;
-	height: 150px;
-	white-space:nowrap;
-	overflow-x: scroll;
+	height: 250px;
+	/*overflow-x: scroll;*/
+	margin-bottom: 100px;
 }
 
 .team-entry {
 	margin-top: 20px;
 	margin-left: 20px;
 	width: 100px;
+	display: inline;
+}
+
+.team-member-details {
+	padding-top: 20px;
+	padding-left: 15px;
+	width: 200px;
+	word-wrap: break-word;
+}
+
+.member-place {
+	font-weight: 600;
 }
 
 #partners {
