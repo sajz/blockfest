@@ -82,7 +82,7 @@
 
 .home-incentive {
 	margin-top: 40px;
-	margin-bottom: 150px;
+	margin-bottom: 50px;
 	background-color: #2BD0E3;
 	height: 140px;
 }
@@ -137,4 +137,5 @@
 	padding-left: 10px;
 	font-size: 40px;
 	font-weight: 600;
+	line-height: 0.9;
 }
