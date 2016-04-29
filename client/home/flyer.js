@@ -6,7 +6,7 @@
 //   By: pciavald <pciavald@student.42.fr>          +#+  +:+       +#+        //
 //                                                +#+#+#+#+#+   +#+           //
 //   Created: 2016/04/29 19:36:28 by pciavald          #+#    #+#             //
-//   Updated: 2016/04/29 19:51:15 by pciavald         ###   ########.fr       //
+//   Updated: 2016/04/29 20:51:33 by pciavald         ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
 
@@ -16,7 +16,7 @@ Template.flyer.helpers({
 	},
 
 	coverImage: function () {
-		var rand = Math.floor(Math.random() * 25);
+		var rand = Math.floor(Math.random() * 24);
 		return ("330/" + rand + ".jpg");
 	}
 
