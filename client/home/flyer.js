@@ -1,7 +1,26 @@
+// ************************************************************************** //
+//                                                                            //
+//                                                        :::      ::::::::   //
+//   flyer.js                                           :+:      :+:    :+:   //
+//                                                    +:+ +:+         +:+     //
+//   By: pciavald <pciavald@student.42.fr>          +#+  +:+       +#+        //
+//                                                +#+#+#+#+#+   +#+           //
+//   Created: 2016/04/29 19:36:28 by pciavald          #+#    #+#             //
+//   Updated: 2016/04/29 19:51:15 by pciavald         ###   ########.fr       //
+//                                                                            //
+// ************************************************************************** //
+
 Template.flyer.helpers({
 	ipfsImage: function () {
 		return ("https://upload.wikimedia.org/wikipedia/en/1/18/Ipfs-logo-1024-ice-text.png");
 	},
+
+	coverImage: function () {
+		var rand = Math.floor(Math.random() * 25);
+		return ("330/" + rand + ".jpg");
+	}
+
+	/*
 	coverImage: function () {
 		var dir = "QmPW997svo5xAamfhv3jiWNVrgMS8xVUqxFSDEc7xhoNkL";
 		var request = "https://gateway.ipfs.io/api/v0/object/get?arg=" + dir;
@@ -17,6 +36,7 @@ Template.flyer.helpers({
 				console.log(err);
 		});
 	}
+	*/
 });
 
 Template.flyer.events({
