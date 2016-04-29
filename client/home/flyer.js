@@ -57,8 +57,9 @@ Template.flyer.onRendered(function () {
 		autoScrolling: false,
 		fitToSection: false
 	});
-	$("h2").css("color", bgcolor);
+	$("h2").css("color", "white");
 	$("#stay-tuned-streamer").css("background-color", bgcolor);
+	$("body").css("background-color", bgcolor);
 
 	jQuery('img.svg').each(function ()
 	{
@@ -76,7 +77,7 @@ Template.flyer.onRendered(function () {
 				$svg = $svg.attr('class', imgClass+' replaced-svg');
 			$svg = $svg.removeAttr('xmlns:a');
 			$img.replaceWith($svg);
-			$svg.attr("fill", bgcolor);
+			$svg.attr("fill", "white");
 		}, 'xml');
 	});
 });
