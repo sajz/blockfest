@@ -5,12 +5,12 @@
 
 .centered {
 	text-align: center;
+	line-height: 95%;
 }
 
 .div-center {
 	width: 100%;
 	text-align: center;
-	padding-bottom: 50px;
 }
 
 #home-header {
@@ -20,6 +20,7 @@
 }
 
 .header {
+	margin-top: 40px;
 	display: inline-block;
 	height: 80px;
 }
@@ -46,8 +47,8 @@
 }
 
 .svg-content {
-	width: 80px;
-	height: 80px;
+	width: 100px;
+	height: 100px;
 	margin-bottom: 15px;
 }
 
