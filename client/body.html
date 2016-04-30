@@ -44,7 +44,10 @@
 				<li role=presentation
 				id="accueil-tab"
 				class="{{#if $eq tab 'accueil'}}active{{/if}}">
-					<a href=#><img src={{getLogo}} class=svg id=logo /></a>
+					<a href=# id=home-nav>
+						<img src={{getLogo}} class="svg inline" id=logo />
+						<div id=home-title class=inline></div>
+					</a>
 				</li>
 				<li role=presentation
 				id="program-tab"

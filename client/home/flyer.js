@@ -68,6 +68,16 @@ Template.flyer.onRendered(function () {
 	$("h2").css("color", "white");
 	$("#stay-tuned-streamer").css("background-color", bgcolor);
 	$("body").css("background-color", bgcolor);
+	$("#home-title")
+		.css(couples[rand].suptitle)
+		.css({
+			"font-size": "100%",
+			"color": bgcolor,
+			"padding": "0px",
+			"margin": "0px",
+			"letter-spacing": "0"
+		})
+		.html($("#flyer-suptitle").html());
 
 	jQuery('img.svg').each(function ()
 	{
