@@ -98,13 +98,17 @@
 	</div>
 
 	<div id=home-buttons>
-		<button class="btn btn-default btn-home">
+		<button id=home-program class="btn btn-default btn-home">
 			programme
 		</button>
-		<button class="btn btn-default btn-home">
+		<button id=home-apply class="btn btn-default btn-home">
+			{{#if session "clickedApply"}}
+			{{> apply_btn}}
+			{{else}}
 			inscription
+			{{/if}}
 		</button>
-		<button class="btn btn-default btn-home">
+		<button id=home-team class="btn btn-default btn-home">
 			équipe
 		</button>
 	</div>
@@ -130,11 +134,18 @@
 		</div>
 	</div>
 
-	<div id=partenaires>
+	<div id=sponsors>
+	</div>
+
+	<div id=partners>
 	</div>
 
 	<div style=margin-bottom:200px;></div>
 
+</template>
+
+<template name="apply_btn">
+	<input type=text class=form-control placeholder=email />
 </template>
 
 <template name="team_member">
