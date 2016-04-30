@@ -5,7 +5,7 @@ Template.accueil.helpers({
 		var days = Math.floor(diff / (1000 * 60 * 60 * 24));
 		return (days);
 	},
-	teamMembersList: function () {
+	speakersList: function () {
 		var rep = "intervenants/";
 		var list = [
 		{
@@ -25,4 +25,13 @@ Template.accueil.helpers({
 		];
 		return (list);
 	}
+});
+
+Template.accueil.events({
+	"click #home-program":	function () {Session.set("tab", "program");		},
+	"click #home-team":		function () {Session.set("tab", "team");		},
+	"click #home-apply": 	function (event) {
+		event.preventDefault();
+		Session.set("clickedApply", true);
+	},
 });
