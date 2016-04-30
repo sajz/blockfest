@@ -120,7 +120,7 @@ function getCouples() {
 	},
 	{
 		title: {
-			"background-color": "#E33E2B"
+			"background-color": "#F05341"
 		},
 		suptitle: {
 			"font-family": "bluebirdRegular",
@@ -131,13 +131,13 @@ function getCouples() {
 			"margin-top": "-22px"
 		},
 		subtitle: {
-			"color": "#9E2F15",
+			"color": "#F7D89F",
 			"margin-top": "-42px"
 		}
 	},
 	{
 		title: {
-			"background-color": "#188ACC"
+			"background-color": "#379DD8"
 		},
 		suptitle: {
 			"padding-top": "30px",
@@ -156,7 +156,7 @@ function getCouples() {
 	},
 	{
 		title: {
-			"background-color": "#644CB1"
+			"background-color": "#9276EF"
 		},
 		suptitle: {
 /*			"padding-top": "30px",

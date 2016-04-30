@@ -79,9 +79,10 @@
 
 #application-description {
 	margin-top: 40px;
-	font-size: 26px;
+	font-size: 16px;
 	text-align: justify;
 	text-align-last: center;
+	font-style: italic;
 }
 
 #partners {
