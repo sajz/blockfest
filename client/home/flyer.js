@@ -4,8 +4,8 @@ Template.flyer.helpers({
 	},
 
 	coverImage: function () {
-		var rand = Math.floor(Math.random() * 24);
-		return ("330/" + rand + ".jpg");
+		var rand = Math.floor(Math.random() * 6) + 1;
+		return ("570/" + rand + ".jpg");
 	}
 
 	/*
