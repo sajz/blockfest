@@ -73,6 +73,10 @@
 	word-wrap: break-word;
 }
 
+.speaker-name {
+	target-new: tab;
+}
+
 .speaker-place {
 	font-weight: 600;
 }
