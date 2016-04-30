@@ -30,7 +30,7 @@ Template.accueil.helpers({
 Template.accueil.events({
 	"click #home-program":	function () {Session.set("tab", "program");		},
 	"click #home-team":		function () {Session.set("tab", "team");		},
-	"click #home-apply": 	function () {
+	"click #home-apply": 	function (event) {
 		event.preventDefault();
 		Session.set("clickedApply", true);
 	},
