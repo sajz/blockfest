@@ -1,15 +1,3 @@
-// ************************************************************************** //
-//                                                                            //
-//                                                        :::      ::::::::   //
-//   flyer.js                                           :+:      :+:    :+:   //
-//                                                    +:+ +:+         +:+     //
-//   By: pciavald <pciavald@student.42.fr>          +#+  +:+       +#+        //
-//                                                +#+#+#+#+#+   +#+           //
-//   Created: 2016/04/29 19:36:28 by pciavald          #+#    #+#             //
-//   Updated: 2016/04/29 20:51:33 by pciavald         ###   ########.fr       //
-//                                                                            //
-// ************************************************************************** //
-
 Template.flyer.helpers({
 	ipfsImage: function () {
 		return ("https://upload.wikimedia.org/wikipedia/en/1/18/Ipfs-logo-1024-ice-text.png");

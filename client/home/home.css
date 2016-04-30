@@ -20,7 +20,7 @@
 }
 
 .header {
-	margin-top: 40px;
+	margin-top: 60px;
 	display: inline-block;
 	height: 80px;
 }
@@ -53,11 +53,10 @@
 }
 
 #team {
+	height: 160px;
 	margin-top: 50px;
 	display: block;
-	height: 250px;
 	/*overflow-x: scroll;*/
-	margin-bottom: 100px;
 }
 
 .team-entry {
@@ -78,6 +77,13 @@
 	font-weight: 600;
 }
 
+#application-description {
+	margin-top: 40px;
+	font-size: 26px;
+	text-align: justify;
+	text-align-last: center;
+}
+
 #partners {
 	margin-top: 50px;
 	display: block;
@@ -91,7 +97,6 @@
 	margin-left: 20px;
 	height: 100px;
 }
-
 
 .home-incentive {
 	margin-top: 40px;
@@ -127,11 +132,18 @@
 	transform: translateY(-50%);
 }
 
+#home-buttons {
+	margin-top: 100px;
+	text-align: center;
+}
+
 .btn-home {
-	width: 100%;
+	margin-left: 30px;
+	width: 20%;
 	height: 60px;
 	margin-bottom: 20px;
-	text-align: left;
+	letter-spacing: 1px;
+	text-align: center;
 	border: 0px;
 	background-color: #E6E6E6;
 	font-weight: 300;
