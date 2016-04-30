@@ -19,7 +19,7 @@ Template.accueil.helpers({
 			name: "Hervé Moal",
 			employment: "Directeur du Développement et de l'innovation",
 			workingPlace: "ARP-Astrance",
-			link: "#",
+			link: "https://www.linkedin.com/in/herv%C3%A9-moal-20338238",
 			filename: rep + "herve.jpg"
 		}
 		];
