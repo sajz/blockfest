@@ -24,9 +24,9 @@ const testIpfs = function () {
 
 Meteor.startup(function () {
 
-	ipfsObj =  IpfsConnector.getInstance(); //singleton
-	ipfsObj.setLogLevel('info');
-	testIpfs();
+//	ipfsObj =  IpfsConnector.getInstance(); //singleton
+//	ipfsObj.setLogLevel('info');
+//	testIpfs();
 
 	UploadServer.init({
 		tmpDir: process.env.PWD + '/.uploads/tmp',
