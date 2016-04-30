@@ -5,7 +5,7 @@ Template.accueil.helpers({
 		var days = Math.floor(diff / (1000 * 60 * 60 * 24));
 		return (days);
 	},
-	teamMembersList: function () {
+	speakersList: function () {
 		var rep = "intervenants/";
 		var list = [
 		{

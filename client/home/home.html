@@ -93,9 +93,9 @@
 			<h3>Les intervenants</h3>
 		</div>
 	</div>
-	<div id=team>
-		{{#each teamMembersList}}
-		{{> team_member}}
+	<div id=speakers>
+		{{#each speakersList}}
+		{{> speaker}}
 		{{/each}}
 	</div>
 
@@ -150,17 +150,17 @@
 	<input type=text class=form-control placeholder=email />
 </template>
 
-<template name="team_member">
-	<div class="team-member inline">
-		<img src={{filename}} class="img-circle team-entry inline">
-		<div class="team-member-details inline">
-			<div class=member-name>
+<template name="speaker">
+	<div class="inline">
+		<img src={{filename}} class="img-circle speaker-img inline">
+		<div class="speaker-details inline">
+			<div class=speaker-name>
 				<a href={{link}}>{{name}}</a>
 			</div>
-			<div class=member-employment>
+			<div class=speaker-employment>
 				{{employment}}
 			</div>
-			<div class=member-place>
+			<div class=speaker-place>
 				{{workingPlace}}
 			</div>
 		</div>

@@ -52,28 +52,28 @@
 	margin-bottom: 15px;
 }
 
-#team {
+#speakers {
 	height: 160px;
 	display: block;
 	width: 100%;
 	/*overflow-x: scroll;*/
 }
 
-.team-entry {
+.speaker-img {
 	margin-top: 20px;
 	margin-left: 20px;
 	width: 100px;
 	display: inline;
 }
 
-.team-member-details {
+.speaker-details {
 	padding-top: 20px;
 	padding-left: 15px;
 	width: 200px;
 	word-wrap: break-word;
 }
 
-.member-place {
+.speaker-place {
 	font-weight: 600;
 }
 
