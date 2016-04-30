@@ -2,12 +2,6 @@ accounts-base@1.2.7
 accounts-password@1.1.8
 accounts-ui@1.1.9
 accounts-ui-unstyled@1.1.12
-akasha:adm-zip@0.4.8
-akasha:es6-symbol@0.0.1
-akasha:fs-extra@0.26.3
-akasha:meteor-ipfs@0.0.5
-akasha:request@2.67.1
-akasha:shelljs@0.5.4
 allow-deny@1.0.4
 autoupdate@1.2.9
 babel-compiler@6.6.4
@@ -22,7 +16,6 @@ caching-compiler@1.0.4
 caching-html-compiler@1.0.6
 callback-hook@1.0.8
 check@1.2.1
-coffeescript@1.0.17
 d3@1.0.0
 d3js:d3@3.5.8
 dburles:mongo-collection-instances@0.3.4
@@ -87,8 +80,6 @@ npm-bcrypt@0.8.5
 npm-mongo@1.4.43
 observe-sequence@1.0.11
 ordered-dict@1.0.7
-practicalmeteor:chai@1.9.2_3
-practicalmeteor:loglevel@1.1.0_3
 promise@0.6.7
 raix:handlebar-helpers@0.2.5
 random@1.0.9
@@ -98,7 +89,6 @@ reactive-var@1.0.9
 reload@1.1.8
 retry@1.0.7
 routepolicy@1.0.10
-sanjo:long-running-child-process@1.1.5
 service-configuration@1.0.9
 session@1.1.5
 sha@1.0.7
