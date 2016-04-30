@@ -3,37 +3,20 @@
 	{{> analytics}}
 
 	<!--
-	<div class="row home-incentive">
-		<div class="col-lg-7" id=incentive-title>
-			BlockFest .16
-		</div>
-		<div class="remaining col-lg-2">
-			j - {{remainingDays}}
-		</div>
-		<div class="tickets col-lg-2">
-			RÉSERVEZ
-		</div>
-	</div>
+	 <div class="row home-incentive">
+	 <div class="col-lg-7" id=incentive-title>
+	 BlockFest .16
+	 </div>
+	 <div class="remaining col-lg-2">
+	 j - {{remainingDays}}
+	 </div>
+	 <div class="tickets col-lg-2">
+	 RÉSERVEZ
+	 </div>
+	 </div>
 	-->
 
 	{{> home_intro}}
-
-	<!--<h2 id=home-header>Pendant Le Blockfest, vous pouvez :</h2>-->
-
-	<div class=div-center>
-		<div class=header>
-			<div class="inline">
-				<h3>Tour d’horizon à</h3>
-			</div>
-			<div class="inline">
-				<h2 id="sujet">360°</h2>
-			</div>
-		</div>
-	</div>
-
-	<div>
-		<img src="picto/nuage.svg" class=svg id=nuage>
-	</div>
 
 	<div class=div-center style=margin-top:20px;>
 		<div class=header>
@@ -45,8 +28,6 @@
 			</div>
 		</div>
 	</div>
-	
-
 	<div class=div-center id=join-types>
 		<div class=header>
 			<div class=join-group>
@@ -75,7 +56,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class=div-center style=margin-top:20px;>
 		<div class=header>
 			<div class="inline" style=margin-right:15px;>
@@ -86,8 +67,6 @@
 			</div>
 		</div>
 	</div>
-	
-
 	<div class=div-center id=join-types>
 		<div class=header>
 			<div class=join-group>
@@ -105,72 +84,35 @@
 				<div class=centered>
 					Prototypez
 				</div>
-			</div> <!--
-			<div class=join-group>
-				<div>
-					<img src="picto/proto.svg" class=svg>
-				</div>
-				<div class=centered>
-					Prototypez
-				</div>
-			</div>
-			<div class=join-group>
-				<div>
-					<img src="picto/credit.svg" class=svg>
-				</div>
-				<div class=centered>
-					Crédit et feedback
-				</div>
-			</div> -->
-		</div>
-	</div>
-	
-	<div class=div-center style=margin-top:20px;>
-		<div class=header>
-			<div class="inline" style=margin-right:15px;>
-				<img src="picto/apprendre.svg" class="svg svg-title">
-			</div>
-			<div class="inline">
-				<h3>Rejoindre les contributeurs</h3>
 			</div>
 		</div>
 	</div>
 
-	<div class=div-center id=join-types>
-		<div class=header>
-			<div class=join-group>
-				<div>
-					<img src="picto/documenter.svg" class="svg svg-content">
-				</div>
-				<div class=centered>
-					Construire une documentation commune
-				</div>
-			</div>
-			<div class=join-group>
-				<div>
-					<img src="picto/outils.svg" class="svg svg-content">
-				</div>
-				<div class=centered>
-					Des outils dédiés
-				</div>
-			</div>
-			<div class=join-group>
-				<div>
-					<img src="picto/credit.svg" class="svg svg-content">
-				</div>
-				<div class=centered>
-					du feedback
-				</div>
-			</div>
-			<div class=join-group>
-				<div>
-					<img src="picto/roles.svg" class="svg svg-content">
-				</div>
-				<div class=centered>
-					Plusieurs possibilités
-				</div>
-			</div>
-		</div>
+	<div id=team>
+		{{#each teamMembersList}}
+		{{> team_member}}
+		{{/each}}
+	</div>
+
+	<div id=application-description>
+		Le nombre de participants que nous pouvons accueillir est limité
+		(~120 pour les conférence et ~40 pour les ateliers) par les dimensions
+		de notre équipe et du lieu qui nous accueille.
+		Afin de garantir une bonne mixité des participations, nous vous demandons
+		des informations sur votre statut pour garantir une bonne
+		répartition des profils.
+	</div>
+
+	<div id=home-buttons>
+		<button class="btn btn-default btn-home">
+			programme
+		</button>
+		<button class="btn btn-default btn-home">
+			inscription
+		</button>
+		<button class="btn btn-default btn-home">
+			équipe
+		</button>
 	</div>
 
 	<div class=div-center id=stay-tuned-streamer>
@@ -189,11 +131,10 @@
 		</div>
 	</div>
 
-	<div id=team>
-		{{#each teamMembersList}}
-		{{> team_member}}
-		{{/each}}
+	<div id=partenaires>
 	</div>
+
+	<div style=margin-bottom:200px;></div>
 
 </template>
 
