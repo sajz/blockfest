@@ -2,6 +2,7 @@ body {
 	font-family: 'Roboto';
 	font-weight: 300;
 	font-size: 16px;
+	overflow-y: scroll;
 }
 
 h2 {
@@ -30,9 +31,9 @@ p {
 }
 
 #logo {
-	margin-left: -30px;
-	margin-right: -20px;
 	height: 20px;
+	width: 20px;
+	margin-right: 10px;
 }
 
 #home-nav {

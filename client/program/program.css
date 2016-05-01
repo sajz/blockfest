@@ -1,4 +1,22 @@
-#program-header {
-	height: 400px;
+#program-header table {
+	margin-top: 60px;
+}
+
+#program-header td {
 	border: 1px solid black;
+	padding: 10px;
+}
+
+#program-header h2 {
+	color: white;
+}
+
+.svg-content2 {
+	width: 80px;
+	height: 70px;
+	margin-bottom: 15px;
+}
+
+#program-content {
+	margin-top: 40px;
 }

@@ -13,7 +13,27 @@ Template.program.helpers({
 	}
 });
 
-Template.body.events({
-	"click #week-tab":		function () {Session.set(tabname, "week");		},
-	"click #weekend-tab":	function () {Session.set(tabname, "weekend");	}
-});
+Template.program.rendered = function () {
+	$("body").css("background-color", "white");
+	$("#program-header table").css("background-color", Session.get("bgcolor"));
+	jQuery('img.svg').each(function ()
+	{
+		var $img = jQuery(this);
+		var imgID = $img.attr('id');
+		var imgClass = $img.attr('class');
+		var imgURL = $img.attr('src');
+
+		jQuery.get(imgURL, function(data)
+		{
+			var $svg = jQuery(data).find('svg');
+			if(typeof imgID !== 'undefined')
+				$svg = $svg.attr('id', imgID);
+			if(typeof imgClass !== 'undefined')
+				$svg = $svg.attr('class', imgClass+' replaced-svg');
+			$svg = $svg.removeAttr('xmlns:a');
+			$img.replaceWith($svg);
+			$svg.attr("fill", "white");
+		}, 'xml');
+	});
+
+}
