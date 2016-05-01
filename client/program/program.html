@@ -1,102 +1,152 @@
 <template name="program">
 
-	<div id=program-header>
+	<div id=program-header class="div-center">
 		<div id=ethics>
 			<h3>Les principes du BlockFest</h3>
 		</div>
-	</div>
 
-	<!--
-	<div class=div-center>
-		<div class=header>
-			<div class="inline">
-				<h3>Balayage à</h3>
-			</div>
-			<div class="inline">
-				<h2 id="sujet">360°</h2>
-			</div>
-		</div>
-	</div>
+		<table class=header>
+			<tr>
 
-	<div>
-		<img src="picto/nuage.svg" class=svg id=nuage height=200px>
-	</div>
+				<td>
+					<div class=div-center>
+						<div class=header>
+							<div class="inline">
+								<h3>Balayage à</h3>
+							</div>
+							<div class="inline">
+								<h2 id="sujet">360°</h2>
+							</div>
+						</div>
+					</div>
+				</td>
 
-	<div class=div-center>
-		<div class=header>
-			<div class="inline">
-				<h3>l'Ésprit</h3>
-			</div>
-		</div>
-		<div>
-			<img src="picto/esprit.svg" class=svg>
-		</div>
-	</div>
+				<td>
+					<div class=div-center>
+						<div class=header>
+							<div class="inline">
+								<h3>Un état d'esprit</h3>
+							</div>
+						</div>
+					</div>
+				</td>
 
-	<div class=div-center style=margin-top:20px;>
-		<div class=header>
-			<div class="inline" style=margin-right:15px;>
-				<img src="picto/apprendre.svg" class="svg svg-title">
-			</div>
-			<div class="inline">
-				<h3>Une initiative basée sur la contribution</h3>
-			</div>
-		</div>
-	</div>
+				<td>
+					<div class=div-center>
+						<div class=header>
+							<div class="inline">
+								<img src="picto/apprendre.svg" class="svg svg-title">
+							</div>
+							<div class="inline">
+								<h3>Une initiative contributive</h3>
+							</div>
+						</div>
+					</div>
+				</td>
 
-	<div class=div-center id=join-types>
-		<div class=header>
-			<div class=join-groupe>
-				<div>
-					<img src="picto/partager.svg" class="svg svg-content2">
-				</div>
-				<div class=centered>
-					Organisation<br />autonome Coopétition et<br />entraide
-				</div>
-			</div>
-			<div class=join-group>
-				<div>
-					<img src="picto/documenter.svg" class="svg svg-content2">
-				</div>
-				<div class=centered>
-					Documentation<br />ouverte
-				</div>
-			</div>
-			<div class=join-group>
-				<div>
-					<img src="picto/outils.svg" class="svg svg-content2">
-				</div>
-				<div class=centered>
-					Des outils<br />dédiés
-				</div>
-			</div>
-			<div class=join-group>
-				<div>
-					<img src="picto/credit.svg" class="svg svg-content2">
-				</div>
-				<div class=centered>
-					Feedback et Crédit
-				</div>
-			</div>
-			<div class=join-group>
-				<div>
-					<img src="picto/roles.svg" class="svg svg-content2">
-				</div>
-				<div class=centered>
-					Interactions<br/>multiples
-				</div>
-			</div>
-		</div>
-	</div>
-	-->
+			</tr>
+			<tr>
 
+				<td>
+					<div>
+						<img src="picto/nuage.svg" class=svg id=nuage height=200px>
+					</div>
+				</td>
+
+				<td>
+					<div>
+						<img src="picto/esprit.svg" class=svg>
+					</div>
+				</td>
+
+				<td>
+					<div class=div-center>
+						<div class=header>
+							<div class=join-groupe>
+								<div>
+									<img src="picto/partager.svg" class="svg svg-content2">
+								</div>
+								<div class=centered>
+									Organisation<br />autonome Coopétition et<br />entraide
+								</div>
+							</div>
+							<div class=join-group>
+								<div>
+									<img src="picto/documenter.svg" class="svg svg-content2">
+								</div>
+								<div class=centered>
+									Documentation<br />ouverte
+								</div>
+							</div>
+							<div class=join-group>
+								<div>
+									<img src="picto/outils.svg" class="svg svg-content2">
+								</div>
+								<div class=centered>
+									Des outils<br />dédiés
+								</div>
+							</div>
+							<div class=join-group>
+								<div>
+									<img src="picto/credit.svg" class="svg svg-content2">
+								</div>
+								<div class=centered>
+									Feedback et Crédit
+								</div>
+							</div>
+							<div class=join-group>
+								<div>
+									<img src="picto/roles.svg" class="svg svg-content2">
+								</div>
+								<div class=centered>
+									Interactions<br/>multiples
+								</div>
+							</div>
+						</div>
+					</div>
+				</td>
+
+			</tr>
+		</table>
+	</div>
 
 	<div id=program-content>
 		<div id=ethics class=centered>
 			<h3>Le programme</h3>
 		</div>
+		<table>
+			<tr>
+				<td>
+					<div>
+						MARDI
+					</div>
+					<div>
+						titre de la journée
+					</div>
+					<div class=program-entry>
+						{{> program_entry}}
+					</div>
+				</td>
+			</tr>
+		</table>
 	</div>
 
+	<div style=margin-bottom:20px;></div>
 
+</template>
+
+<template name="program_entry">
+	<div class=row>
+		<div class=col-lg-1>
+			XXh<br />
+			XXh
+		</div>
+		<div class=col-lg-1>
+			Salle
+		</div>
+		<div class=col-lg-10>
+			nom de l'entrée
+		</div>
+	</div>
 </template>
 
