@@ -65,7 +65,7 @@ Template.flyer.onRendered(function () {
 		autoScrolling: false,
 		fitToSection: false
 	});
-	$("h2").css("color", "white");
+	$("h2").css("color", "black");
 	$("#stay-tuned-streamer").css("background-color", bgcolor);
 	$("body").css("background-color", bgcolor);
 	$("#home-title")
