@@ -6,13 +6,14 @@
 			<thead>
 				<tr>
 					<td></td>
-					<td colspan="3">Semaine</td>
+					<td colspan="4">Semaine</td>
 					<td>Weekend</td>
 				</tr>
 				<tr>
 					<td>Public</td>
 					<td colspan="2">Particulier</td>
 					<td>Entreprise</td>
+					<td>Conférence</td>
 					<td>hackathon</td>
 				</tr>
 			</thead>
@@ -25,7 +26,8 @@
 					<td>150€</td>
 					<td>450€</td>
 					<td>750€</td>
-					<td>40€</td>
+					<td>20€</td>
+					<td>15€</td>
 				</tr>
 
 				<tr>
@@ -34,10 +36,11 @@
 					<td>1 journée</td>
 					<td>Semaine</td>
 					<td>Semaine</td>
+					<td></td>
 					<td>Weekend</td>
 				</tr>
 
-				<tr>
+	<!--			<tr>
 					<td>Place garantie aux conférences</td>
 
 					<td><span class="glyphicon glyphicon-ok"></span></td>
@@ -45,13 +48,14 @@
 					<td><span class="glyphicon glyphicon-ok"></span></td>
 					<td></td>
 				</tr>
-
+		-->
 				<tr>
 					<td>Accès à la liste des participants (choix individuel)</td>
 
 					<td><span class="glyphicon glyphicon-ok"></span></td>
 					<td><span class="glyphicon glyphicon-ok"></span></td>
 					<td><span class="glyphicon glyphicon-ok"></span></td>
+					<td></td>
 					<td><span class="glyphicon glyphicon-ok"></span></td>
 				</tr>
 
@@ -62,6 +66,7 @@
 					<td></td>
 					<td><span class="glyphicon glyphicon-ok"></span></td>
 					<td><span class="glyphicon glyphicon-ok"></span></td>
+					<td></td>
 					<td><span class="glyphicon glyphicon-ok"></span></td>
 				</tr>
 
@@ -72,14 +77,16 @@
 					<td><span class="glyphicon glyphicon-ok"></span></td>
 					<td><span class="glyphicon glyphicon-ok"></span></td>
 					<td></td>
+					<td><span class="glyphicon glyphicon-ok"></span></td>
 				</tr>
 
 				<tr>
-					<td>Accès à la session "résumé accéléré" de la semaine</td>
+					<td>Accès à la session pré-Sprint (résumé accéléré de la semaine)</td>
 
 					<td></td>
 					<td></td>
 					<td><span class="glyphicon glyphicon-ok"></span></td>
+					<td></td>
 					<td><span class="glyphicon glyphicon-ok"></span></td>
 				</tr>
 
@@ -90,6 +97,7 @@
 					<td></td>
 					<td><span class="glyphicon glyphicon-ok"></span></td>
 					<td></td>
+					<td></td>
 				</tr>
 
 				<tr>
@@ -98,6 +106,7 @@
 					<td></td>
 					<td></td>
 					<td><span class="glyphicon glyphicon-ok"></span></td>
+					<td></td>
 					<td></td>
 				</tr>
 
@@ -108,6 +117,7 @@
 					<td></td>
 					<td><span class="glyphicon glyphicon-ok"></span></td>
 					<td></td>
+					<td></td>
 				</tr>
 
 				<tr>
@@ -117,12 +127,23 @@
 					<td></td>
 					<td><span class="glyphicon glyphicon-ok"></span></td>
 					<td></td>
+					<td></td>
 				</tr>
 
 			</tbody>
 		</table>
 	</div>
 
+	<div id=home-buttons>
+		<button id=home-btn-apply class="btn btn-default btn-home">
+			{{#if session "clickedApply"}}
+			{{> apply_btn}}
+			{{else}}
+			Devenez contributeurs
+			{{/if}}
+		</button>
+	</div>
+	
 	<!--
 	{{home "students"}}
 

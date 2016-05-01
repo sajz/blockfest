@@ -119,22 +119,6 @@
 		{{/each}}
 	</div>
 
-	<div id=home-buttons>
-		<button id=home-btn-program class="btn btn-default btn-home">
-			programme
-		</button>
-		<button id=home-btn-apply class="btn btn-default btn-home">
-			{{#if session "clickedApply"}}
-			{{> apply_btn}}
-			{{else}}
-			inscription
-			{{/if}}
-		</button>
-		<button id=home-btn-team class="btn btn-default btn-home">
-			équipe
-		</button>
-	</div>
-
 	<div id=application-description>
 		La billeterie ouvrira le 20 Mai<br />
 		Nous ne serons pas en mesure de recevoir plus de ~120p pour les
@@ -158,6 +142,24 @@
 			</div>
 		</div>
 	</div>
+	
+	<div id=home-buttons>
+		<button id=home-btn-program class="btn btn-default btn-home">
+			programme
+		</button>
+		<button id=home-btn-apply class="btn btn-default btn-home">
+			{{#if session "clickedApply"}}
+			{{> apply_btn}}
+			{{else}}
+			inscription
+			{{/if}}
+		</button>
+		<button id=home-btn-team class="btn btn-default btn-home">
+			équipe
+		</button>
+	</div>
+
+	
 
 	<div id=sponsors>
 	</div>
