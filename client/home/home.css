@@ -19,21 +19,18 @@
 	padding-bottom: 50px;
 }
 
-td {
-	padding-right: 20px;
-	padding-bottom: 50px;
-	border: 1px dashed white;
-}
-
 #home-program {
 	margin-top: 100px;
 	width: 100%;
 }
 
+#home-program td {
+	border: 1px dashed white;
+	padding: 30px;
+}
+
 .header {
-	margin-top: 100px;
 	display: inline-block;
-	height: 80px;
 }
 
 #join-types {
@@ -41,8 +38,8 @@ td {
 }
 .join-group {
 	width: 160px;
-	display: inline;
 	float: left;
+	height: 150px;
 }
 
 #stay-tuned {
@@ -67,6 +64,11 @@ td {
 	width: 80px;
 	height: 70px;
 	margin-bottom: 15px;
+}
+
+#speakers-title {
+	margin-top: 100px;
+	margin-bottom: 30px;
 }
 
 #speakers {
@@ -106,9 +108,7 @@ td {
 }
 
 #partners {
-	margin-top: 50px;
 	display: block;
-	height: 150px;
 	white-space:nowrap;
 }
 
