@@ -28,10 +28,22 @@ Template.accueil.helpers({
 });
 
 Template.accueil.events({
-	"click #home-program":	function () {Session.set("tab", "program");		},
-	"click #home-team":		function () {Session.set("tab", "team");		},
-	"click #home-apply": 	function (event) {
+	"click #home-btn-program":	function () {Session.set("tab", "program");		},
+	"click #home-btn-team":		function () {Session.set("tab", "team");		},
+	"click #home-btn-apply": 	function (event) {
 		event.preventDefault();
 		Session.set("clickedApply", true);
-	},
+	}
 });
+
+Template.accueil.rendered = function () {
+	$("#home-btn-apply").hover(function () {
+		$("#application-description").animate({
+			opacity: 1
+		}, 250);
+	}, function () {
+		$("#application-description").animate({
+			opacity: 0
+		}, 250);
+	});
+}

@@ -26,12 +26,12 @@ td {
 }
 
 #home-program {
-	margin-top: 40px;
+	margin-top: 100px;
 	width: 100%;
 }
 
 .header {
-	margin-top: 60px;
+	margin-top: 100px;
 	display: inline-block;
 	height: 80px;
 }
@@ -73,7 +73,6 @@ td {
 	height: 160px;
 	display: block;
 	width: 100%;
-	/*overflow-x: scroll;*/
 }
 
 .speaker-img {
@@ -101,9 +100,9 @@ td {
 #application-description {
 	margin-top: 40px;
 	font-size: 16px;
-	text-align: justify;
-	text-align-last: center;
+	text-align: center;
 	font-style: italic;
+	opacity: 0;
 }
 
 #partners {
@@ -154,15 +153,16 @@ td {
 }
 
 #home-buttons {
+	width: 100%;
 	margin-top: 100px;
-	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .btn-home {
-	margin-left: 30px;
+	margin-left: 10%;
 	width: 20%;
 	height: 60px;
-	margin-bottom: 20px;
 	letter-spacing: 1px;
 	text-align: center;
 	border: 0px;
