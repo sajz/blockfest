@@ -20,13 +20,13 @@
 }
 
 #home-program {
-	margin-top: 100px;
+	margin-top: 50px;
 	width: 100%;
 }
 
 #home-program td {
 	border: 1px dashed white;
-	padding: 30px;
+	padding: 15px;
 }
 
 .header {
@@ -184,4 +184,11 @@
 	font-size: 40px;
 	font-weight: 600;
 	line-height: 0.9;
+}
+
+#accueil-tab {
+	margin-left: -44px;
+}
+#program-tab {
+	margin-left: 44px;
 }
