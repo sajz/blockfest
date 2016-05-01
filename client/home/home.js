@@ -21,6 +21,20 @@ Template.accueil.helpers({
 			workingPlace: "ARP-Astrance",
 			link: "https://www.linkedin.com/in/herv%C3%A9-moal-20338238",
 			filename: rep + "herve.jpg"
+		},
+		{
+			name: "Sebastien Couture",
+			employment: "Co-fondateur",
+			workingPlace: "Stratumm",
+			link: "https://www.linkedin.com/in/couturesebastien",
+			filename: rep + "sebastiencout.jpg"
+		},
+		{
+			name: "Jerome Giusti",
+			employment: "Avocat fondateur",
+			workingPlace: "11-100-34",
+			link: "https://www.linkedin.com/in/jeromegiusti",
+			filename: rep + "jeromegiusti.jpg"
 		}
 		];
 		return (list);

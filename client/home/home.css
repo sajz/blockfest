@@ -21,11 +21,13 @@
 #home-program {
 	margin-top: 50px;
 	width: 100%;
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 #home-program td {
 	border: 1px dashed white;
 	padding: 40px;
+
 }
 
 .header {
@@ -172,7 +174,7 @@
 	font-size: 22px;
 }
 #h4intro {
-	width: 600px;
+	width: 777px;
 }
 
 #nuage {
