@@ -23,6 +23,97 @@ Template.accueil.helpers({
 			filename: rep + "herve.jpg"
 		},
 		{
+			name: "Laurence Allard",
+			employment: "Chercheuse en Antropologie des datas",
+			workingPlace: "Université Paris 3-IRCAV",
+			link: "http://culturesexpressives.fr/doku.php",
+			filename: rep + "laurenceallard.jpg"
+		},
+		{
+			name: "Luca Comparini",
+			employment: "Blockchain Expert",
+			workingPlace: "IBM",
+			link: "https://www.linkedin.com/in/lucacomparini",
+			filename: rep + "lucascomparini.jpg"
+		},		
+		{
+			name: "Serge Ravet",
+			employment: "Directeur de l'Innovation",
+			workingPlace: "ADPIOS",
+			link: "http://www.europortfolio.org/people/serge-ravet",
+			filename: rep + "sergesravet.jpg"
+		},		
+		{
+			name: "Xavier Lavayssière",
+			employment: "Cofondateur",
+			workingPlace: "Les Bricodeurs",
+			link: "https://www.linkedin.com/in/lavayssiere/fr",
+			filename: rep + "xavierlava.jpg"
+		},		
+		{
+			name: "Nicolas Loubet",
+			employment: "Cofondateur",
+			workingPlace: "Cellabz & DAISEE",
+			link: "https://www.linkedin.com/in/nicolasloubet",
+			filename: rep + "nicolasloubet.jpg"
+		},
+		{
+			name: "Sajida Zouahri",
+			employment: "Ingénieure R&D",
+			workingPlace: "Orange Labs",
+			link: "https://www.linkedin.com/in/sajidazouarhi",
+			filename: rep + "sajida.jpg"
+		},
+		{
+			name: "Justine Hannequin",
+			employment: "Designer UX/UI",
+			workingPlace: "CRI",
+			link: "https://www.linkedin.com/in/justine-hannequin-650b8642",
+			filename: rep + "justineha.jpg"
+		},
+		{
+			name: "Khalil Jouini",
+			employment: "Doctorant en sociologie",
+			workingPlace: "*",
+			link: "http://culturesexpressives.fr/doku.php",
+			filename: rep + "laurenceallard.jpg"
+		},
+		{
+			name: "Clément Bergé-Lefranc",
+			employment: "cofondateur",
+			workingPlace: "Ledgys",
+			link: "https://www.linkedin.com/in/clementbl",
+			filename: rep + "clementbergelef.jpg"
+		},
+		{
+			name: "Adrian Sauzade",
+			employment: "cofondateur",
+			workingPlace: "Czam",
+			link: "https://www.linkedin.com/in/adriansauzade",
+			filename: rep + "adriansauzade.jpg"
+		},
+		{
+			name: "Thomas Saint-Aubin",
+			employment: "cofondateur",
+			workingPlace: "Open-Law",
+			link: "https://www.linkedin.com/in/thomas-saint-aubin-116a3113",
+			filename: rep + "thomassaintaubin.jpg"
+		},
+		/*{
+			name: "Alexandre Statchenko",
+			employment: "cofondateur",
+			workingPlace: "Blockchain France",
+			link: "http://culturesexpressives.fr/doku.php",
+			filename: rep + "laurenceallard.jpg"
+		},
+		{
+			name: "Alexandre Statchenko",
+			employment: "cofondateur",
+			workingPlace: "Blockchain France",
+			link: "http://culturesexpressives.fr/doku.php",
+			filename: rep + "laurenceallard.jpg"
+		},*/
+		{
 			name: "Sébastien Couture",
 			employment: "Co-fondateur",
 			workingPlace: "Stratumm",
