@@ -59,7 +59,7 @@ Template.accueil.helpers({
 			employment: "Directeur de l'Innovation",
 			workingPlace: "ADPIOS",
 			link: "http://www.europortfolio.org/people/serge-ravet",
-			filename: rep + "sergesravet.jpg"
+			filename: rep + "sergeravet.jpg"
 		},		
 		{
 			name: "Xavier Lavayssière",
@@ -90,11 +90,18 @@ Template.accueil.helpers({
 			filename: rep + "justineha.jpg"
 		},
 		{
+			name: "Pierre Alexis Ciavaldini",
+			employment: "Étudiant 42, Coordinateur",
+			workingPlace: "Makernet",
+			link: "https://www.linkedin.com/in/pciavald",
+			filename: rep + "pierrealexis.jpg"
+		},
+		{
 			name: "Khalil Jouini",
 			employment: "Doctorant en sociologie",
 			workingPlace: "*",
 			link: "http://culturesexpressives.fr/doku.php",
-			filename: rep + "laurenceallard.jpg"
+			filename: rep + "khalil.jpg"
 		},
 		{
 			name: "Clément Bergé-Lefranc",
