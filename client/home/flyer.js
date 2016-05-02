@@ -4,7 +4,7 @@ Template.flyer.helpers({
 	},
 
 	coverImage: function () {
-		var rand = Math.floor(Math.random() * 6) + 1;
+		var rand = Math.floor(Math.random() * 24) + 1;
 		return ("570/" + rand + ".jpg");
 	}
 
