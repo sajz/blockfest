@@ -1,5 +1,4 @@
 #flyer-container {
-	/*margin-bottom: 80px;*/
 	transition: opacity 1s ease-out;
 }
 
@@ -11,7 +10,7 @@
 
 #flyer-display {
 	display: block;
-	/*margin-top: -40px;*/
+	margin-bottom: 20px;
 }
 
 #flyer-image {
@@ -19,6 +18,11 @@
 	position: relative;
 	overflow: hidden;
 }
+
+#flyer-arrow {
+	fill: black;
+}
+
 .cover {
 	width: 50%;
 	height: 100%;
