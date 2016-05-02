@@ -38,6 +38,11 @@ p {
 	margin-right: 10px;
 }
 
+#countdown {
+	font-size: 25px;
+	font-weight: 400;
+}
+
 #home-nav {
 	height: 50px;
 }

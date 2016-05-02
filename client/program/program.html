@@ -111,14 +111,25 @@
 	</div>
 
 	<div id=program-content>
-		<div id=ethics class=centered>
-			<h2>Le programme</h2>
+		<div class=centered>
+			<h3>Le programme</h3>
 		</div>
 		<table>
 			<tr>
 				<td>
-					<div>
+					<div class=program-day-title>
 						MARDI
+					</div>
+					<div>
+						titre de la journée
+					</div>
+					<div class=program-entry>
+						{{> program_entry}}
+					</div>
+				</td>
+				<td>
+					<div class=program-day-title>
+						MERCREDI
 					</div>
 					<div>
 						titre de la journée
@@ -131,20 +142,20 @@
 		</table>
 	</div>
 
-	<div style=margin-bottom:20px;></div>
+	<div style=margin-bottom:200px;></div>
 
 </template>
 
 <template name="program_entry">
-	<div class=row>
-		<div class=col-lg-1>
+	<div class=entry-container>
+		<div class="entry-time">
 			XXh<br />
 			XXh
 		</div>
-		<div class=col-lg-1>
+		<div class="entry-room">
 			Salle
 		</div>
-		<div class=col-lg-10>
+		<div class="entry-name">
 			nom de l'entrée
 		</div>
 	</div>
