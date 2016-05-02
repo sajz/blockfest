@@ -1,3 +1,21 @@
+Template.accueil.events({
+	//"click #home-btn-program":	function () {Session.set("tab", "program");		},
+	//"click #home-btn-team":		function () {Session.set("tab", "team");		},
+	//"click #home-btn-apply": 	function (event) {
+	//	event.preventDefault();
+	//	Session.set("clickedApply", true);
+	//}
+	"click #stay-tuned": function () {
+		Meteor.call("stayTuned", $("#email").val());
+		$("#stay-tuned-container").css({
+			"display": "none"
+		});
+		$("#thankyou").css({
+			"display": "block"
+		});
+	}
+});
+
 Template.accueil.helpers({
 	remainingDays: function () {
 		var blockfest = new Date(2016, 5, 7);
@@ -132,16 +150,8 @@ Template.accueil.helpers({
 	}
 });
 
-Template.accueil.events({
-	//"click #home-btn-program":	function () {Session.set("tab", "program");		},
-	//"click #home-btn-team":		function () {Session.set("tab", "team");		},
-	//"click #home-btn-apply": 	function (event) {
-	//	event.preventDefault();
-	//	Session.set("clickedApply", true);
-	//}
-});
-
 Template.accueil.rendered = function () {
+	/*
 	$("#home-btn-apply").hover(function () {
 		$("#application-description").animate({
 			opacity: 1
@@ -151,4 +161,5 @@ Template.accueil.rendered = function () {
 			opacity: 0
 		}, 250);
 	});
+	*/
 }

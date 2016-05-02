@@ -3,7 +3,7 @@
 }
 
 #program-header td {
-	border: 1px solid black;
+	border: 1px dashed white;
 	padding: 10px;
 }
 
@@ -12,7 +12,6 @@
 }
 
 .svg-content2 {
-	width: 80px;
 	height: 70px;
 	margin-bottom: 15px;
 }

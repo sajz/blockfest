@@ -2,6 +2,8 @@
 
 {{home "accueil"}}
 
+{{#if has_access}}
+
 	{{#if $eq tab "accueil"}}
 		{{> flyer}}
 	{{/if}}
@@ -47,18 +49,17 @@
 						<div id=home-title class=inline></div>
 					</a>
 				</li>
-				<!--
 				<li role=presentation
 				id="program-tab"
 				class="{{#if $eq tab 'program'}}active{{/if}}">
 					<a href=#>Programme</a>
 				</li>
-				
 				<li role=presentation
 				id="participate-tab"
 				class="{{#if $eq tab 'participate'}}active{{/if}}">
 					<a href=#>Billets</a>
 				</li>
+				<!--
 					<li role=presentation
 				id="rules-tab"
 				class="{{#if $eq tab 'rules'}}active{{/if}}">
@@ -87,6 +88,7 @@
 				id="">
 					<a href="#" id=countdown>J - {{countDown}}</a>
 				</li>
+				<!--
 				{{#if currentUser}}
 				<li role=presentation
 				id="profile-tab"
@@ -94,17 +96,20 @@
 					<a href=#>Mon profil</a>
 				</li>
 				{{else}}
-				<!--
 				<li role=presentation
 				id="loginButtons"
 				class="{{#if $eq tab 'profile'}}active{{/if}}">
 					{{>loginButtons}}
 				</li>
-				-->
 				{{/if}}
+				-->
 			</ul>
 		</div>
 	</nav>
 </footer>
+
+{{else}}
+	{{> lock}}
+{{/if}}
 
 </body>
