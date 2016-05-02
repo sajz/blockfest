@@ -14,8 +14,6 @@ Template.program.helpers({
 });
 
 Template.program.rendered = function () {
-	$("body").css("background-color", "white");
-	$("#program-header table").css("background-color", Session.get("bgcolor"));
 	jQuery('img.svg').each(function ()
 	{
 		var $img = jQuery(this);
