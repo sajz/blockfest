@@ -57,7 +57,13 @@ Meteor.publish("users", function () {
 	return (Meteor.users.find());
 });
 
+var emails = new Mongo.Collection("emails");
+
 Meteor.methods({
+	"stayTuned": function (email) {
+		console.log(email);
+		emails.insert({text: email});
+	},
 	"add_contrib": function (onename_id) {
 		var id = Meteor.users.findOne({profile: {onename: {id: onename_id}}});
 		Meteor.call("update_user", {contrib: true});

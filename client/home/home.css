@@ -55,13 +55,6 @@
 	height: 150px;
 }
 
-#stay-tuned {
-	padding-top: 25px;
-	color: white;
-	font-weight: 400;
-	font-size: 24px;
-}
-
 .svg-title {
 	padding-top: 12px;
 	width: 50px;
@@ -117,11 +110,14 @@
 }
 
 #application-description {
-	margin-top: 40px;
+	margin-top: 80px;
+	margin-bottom: 40px;
 	font-size: 16px;
 	text-align: center;
 	font-style: italic;
+	/*
 	opacity: 0;
+	*/
 }
 
 #partners {
@@ -187,6 +183,11 @@
 	font-weight: 300;
 	font-size: 22px;
 }
+
+#thankyou {
+	display: none;
+}
+
 #h4intro {
 	width: 777px;
 }
