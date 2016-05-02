@@ -24,10 +24,22 @@
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
+#home-program th {
+	border: 1px dashed white;
+}
+
 #home-program td {
 	border: 1px dashed white;
-	padding: 40px;
+	padding: 10px;
+	padding-bottom: 30px;
+}
 
+#home-program h4 {
+	line-height: 17px;
+}
+
+#home-program .svg-content {
+	margin-top: 20px;
 }
 
 .header {
