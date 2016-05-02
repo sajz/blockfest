@@ -42,12 +42,12 @@ Template.accueil.helpers({
 });
 
 Template.accueil.events({
-	"click #home-btn-program":	function () {Session.set("tab", "program");		},
-	"click #home-btn-team":		function () {Session.set("tab", "team");		},
-	"click #home-btn-apply": 	function (event) {
-		event.preventDefault();
-		Session.set("clickedApply", true);
-	}
+	//"click #home-btn-program":	function () {Session.set("tab", "program");		},
+	//"click #home-btn-team":		function () {Session.set("tab", "team");		},
+	//"click #home-btn-apply": 	function (event) {
+	//	event.preventDefault();
+	//	Session.set("clickedApply", true);
+	//}
 });
 
 Template.accueil.rendered = function () {
