@@ -68,9 +68,11 @@
 	margin-bottom: 30px;
 }
 
+.speaker {
+	height: 170px;
+}
+
 #speakers {
-	height: 160px;
-	display: block;
 	width: 100%;
 }
 

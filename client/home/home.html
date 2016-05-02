@@ -16,23 +16,22 @@
 	 </div>
 	-->
 
-				<div class=div-center>
-					<div class=header>
-						<img src="picto/arrow.svg" class="svg svg-title">
-					</div>
-				</div>
-		
-	{{> home_intro}}
-<link rel="stylesheet" href="home.css" type="text/css" media="screen">
+	<div class=div-center>
+		<div class=header>
+			<img src="picto/arrow.svg" class="svg svg-title">
+		</div>
+	</div>
 
-				<div class=div-center>
-					<div class=header style=margin-top:45px>
-						<h2 style=color:black>
-							Au programme
-						</h2>
-					</div>
-				</div>
-						
+	{{> home_intro}}
+
+	<div class=div-center>
+		<div class=header style=margin-top:45px>
+			<h2 style=color:black>
+				Au programme
+			</h2>
+		</div>
+	</div>
+
 	<table id=home-program>
 		<tr>
 			<td>
@@ -121,7 +120,7 @@
 			<h2>Les intervenants</h2>
 		</div>
 	</div>
-	<div id=speakers>
+	<div id=speakers class=row>
 		{{#each speakersList}}
 		{{> speaker}}
 		{{/each}}
@@ -135,22 +134,22 @@
 		profil vous seront demandées à l'inscription.
 	</div>
 
-<!--	<div class=div-center id=stay-tuned-streamer>
-		<div class=header id=stay-tuned>
-			<div style=padding-bottom:20px;>
-				Soyez prévenu de l'ouverture de la billetterie
-			</div>
-			<div class=input-group>
-				<input type=text class=form-control placeholder=email>
-				<span class=input-group-btn>
-					<button class="btn btn-default">
-						<span class="glyphicon glyphicon-sunglasses"></span>
-					</button>
-				</span>
-			</div>
-		</div>
-	</div>
--->	
+	<!--	<div class=div-center id=stay-tuned-streamer>
+	 <div class=header id=stay-tuned>
+	 <div style=padding-bottom:20px;>
+	 Soyez prévenu de l'ouverture de la billetterie
+	 </div>
+	 <div class=input-group>
+	 <input type=text class=form-control placeholder=email>
+	 <span class=input-group-btn>
+	 <button class="btn btn-default">
+	 <span class="glyphicon glyphicon-sunglasses"></span>
+	 </button>
+	 </span>
+	 </div>
+	 </div>
+	 </div>
+	-->	
 	<div id=home-buttons>
 		<button id=home-btn-program class="btn btn-default btn-home">
 			programme
@@ -167,7 +166,7 @@
 		</button>
 	</div>
 
-	
+
 
 	<div id=sponsors>
 	</div>
@@ -184,17 +183,19 @@
 </template>
 
 <template name="speaker">
-	<div class="inline">
-		<img src={{filename}} class="img-circle speaker-img inline">
-		<div class="speaker-details inline">
-			<div class=speaker-name>
-				<a href={{link}} target=_blank >{{name}}</a>
-			</div>
-			<div class=speaker-employment>
-				{{employment}}
-			</div>
-			<div class=speaker-place>
-				{{workingPlace}}
+	<div class=col-lg-4>
+		<div class=speaker>
+			<img src={{filename}} class="img-circle speaker-img inline">
+			<div class="speaker-details inline">
+				<div class=speaker-name>
+					<a href={{link}} target=_blank >{{name}}</a>
+				</div>
+				<div class=speaker-employment>
+					{{employment}}
+				</div>
+				<div class=speaker-place>
+					{{workingPlace}}
+				</div>
 			</div>
 		</div>
 	</div>

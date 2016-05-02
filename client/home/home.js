@@ -23,14 +23,14 @@ Template.accueil.helpers({
 			filename: rep + "herve.jpg"
 		},
 		{
-			name: "Sebastien Couture",
+			name: "Sébastien Couture",
 			employment: "Co-fondateur",
 			workingPlace: "Stratumm",
 			link: "https://www.linkedin.com/in/couturesebastien",
 			filename: rep + "sebastiencout.jpg"
 		},
 		{
-			name: "Jerome Giusti",
+			name: "Jérôme Giusti",
 			employment: "Avocat fondateur",
 			workingPlace: "11-100-34",
 			link: "https://www.linkedin.com/in/jeromegiusti",
