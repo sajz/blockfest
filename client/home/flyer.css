@@ -22,7 +22,11 @@
 #flyer-arrow {
 	fill: black;
 }
-
+.flyer-arrow {
+	margin-top: 0px;
+	width: 220px;
+	height: 13px;
+}
 .cover {
 	width: 50%;
 	height: 100%;
