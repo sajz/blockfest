@@ -21,11 +21,13 @@
 #home-program {
 	margin-top: 50px;
 	width: 100%;
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 #home-program td {
 	border: 1px dashed white;
 	padding: 40px;
+
 }
 
 .header {
@@ -44,13 +46,15 @@
 #stay-tuned {
 	padding-top: 25px;
 	color: white;
-	font-weight: 500;
+	font-weight: 400;
+	font-size: 24px;
 }
 
 .svg-title {
 	padding-top: 12px;
 	width: 50px;
 	height: 50px;
+	color: black;
 }
 
 .svg-content {
@@ -170,7 +174,7 @@
 	font-size: 22px;
 }
 #h4intro {
-	width: 600px;
+	width: 777px;
 }
 
 #nuage {
@@ -181,5 +185,5 @@
 	margin-top: 17px;
 	padding-left: 15px;
 	font-size: 40px;
-	font-weight: 600;
+	font-weight: 400;
 }

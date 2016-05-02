@@ -65,7 +65,7 @@ Template.flyer.onRendered(function () {
 		autoScrolling: false,
 		fitToSection: false
 	});
-	$("h2").css("color", "white");
+	$("h2").css("color", "black");
 	$("#stay-tuned-streamer").css("background-color", bgcolor);
 	$("body").css("background-color", bgcolor);
 	$("#home-title")
@@ -119,7 +119,7 @@ function getCouples() {
 			"font-weight": "400",
 			"font-size": "130px",
 			"text-transform": "uppercase",
-			"color": "black",
+			"color": "#222",
 			"margin-top": "-30px",
 			"letter-spacing": "8px"
 		},
@@ -195,7 +195,7 @@ function getCouples() {
 			"font-weight": "bold",
    		 	"font-style": "normal",
 			"font-size": "105px",
-			"color": "black",
+			"color": "#222",
 			"margin-top": "-22px",
 			"line-height": "1.4",
 			"letter-spacing": "12px",
@@ -217,7 +217,7 @@ function getCouples() {
 			"font-weight": "bold",
    		 	"font-style": "normal",
 			"font-size": "105px",
-			"color": "black",
+			"color": "#222",
 			"margin-top": "-22px",
 			"line-height": "1.4",
 			"letter-spacing": "12px",
