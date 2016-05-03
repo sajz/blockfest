@@ -12,6 +12,17 @@
 	text-align: center;
 }
 
+.intro-white {
+	color: white;
+	font-size: 26px;
+	font-weight: 500;
+}
+
+.intro-black {
+	width: 500px;
+	font-size: 20px;
+}
+
 #home-header {
 	text-align: center;
 	padding-top: 50px;
@@ -186,10 +197,6 @@
 
 #thankyou {
 	display: none;
-}
-
-#h4intro {
-	width: 777px;
 }
 
 #nuage {
