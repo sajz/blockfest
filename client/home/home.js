@@ -151,6 +151,13 @@ Template.accueil.helpers({
 			workingPlace: "11-100-34",
 			link: "https://www.linkedin.com/in/jeromegiusti",
 			filename: rep + "jeromegiusti.jpg"
+		},
+		{
+			name: "Laura Champion",
+			employment: "Responsable de la communication",
+			workingPlace: "EEIE",
+			link: "https://www.linkedin.com/in/laura-champion-32579441",
+			filename: rep + "laurachampion.jpg"
 		}
 		];
 		return (list);
