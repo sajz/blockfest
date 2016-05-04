@@ -3,6 +3,13 @@
 	margin-bottom: 80px;
 }
 
+#comingsoon {
+	margin-top: 40px;
+	font-size: 36px;
+	text-align: center;
+	width: 100%;
+}
+
 #program-header table {
 	width: 99%;
 }

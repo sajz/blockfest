@@ -31,6 +31,9 @@
 	{{#if $eq tab "info"}}
 		{{> info}}
 	{{/if}}
+	{{#if $eq tab "info"}}
+		{{> credits}}
+	{{/if}}
 	{{#if $eq tab "profile"}}
 		{{> profile}}
 	{{/if}}
@@ -84,6 +87,11 @@
 				
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
+				<li role=presentation
+				id="credits-tab"
+				class="{{#if $eq tab 'credits'}}active{{/if}}">
+					<a href=#>Crédits</a>
+				</li>
 				<li role=presentation
 				id="">
 					<a href="#" id=countdown>J - {{countDown}}</a>
