@@ -43,16 +43,11 @@ Template.body.events({
 
 Template.body.rendered = function () {
 
-	//var nav = ".navbar-inverse .navbar-nav > .active > a";
-	//$(nav + ", " + nav + ":hover, " + nav + ":focus").css({
-	//	"background-color": "red",
-	//	"color": "black"
-	//});
-	//
-
+	/*
 	Meteor.call("eventbrite", function (err, data) {
 		if (!err) {
 			Session.set("event", data);
 		}
 	});
+	*/
 };

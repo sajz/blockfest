@@ -23,11 +23,8 @@ session
 accounts-ui
 accounts-password
 meteortoys:allthings
-tomi:upload-server
-tomi:upload-jquery
 http
 lawshe:full-page
 
 
-dsyko:d3-cloud
 d3js:d3

@@ -28,6 +28,7 @@ Meteor.startup(function () {
 //	ipfsObj.setLogLevel('info');
 //	testIpfs();
 
+	/*
 	UploadServer.init({
 		tmpDir: process.env.PWD + '/.uploads/tmp',
 		uploadDir: process.env.PWD + '/.uploads/',
@@ -51,6 +52,7 @@ Meteor.startup(function () {
 			});
 		}
 	});
+	*/
 });
 
 Meteor.publish("users", function () {
