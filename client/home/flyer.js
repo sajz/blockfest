@@ -45,6 +45,10 @@ Template.flyer.events({
 		$("#flyer-upload").css({
 			"display": "none"
 		});
+	},
+	"click #scroll": function (event) {
+		event.preventDefault();
+		window.scrollTo(0, Session.get("offset") + 1);
 	}
 });
 

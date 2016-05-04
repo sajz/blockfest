@@ -159,10 +159,12 @@ Template.accueil.helpers({
 });
 
 Template.accueil.rendered = function () {
+
 	var bodyRect = document.body.getBoundingClientRect();
 	var elemRect = document.getElementById("home-intro").getBoundingClientRect();
-	var offset   = elemRect.bottom - bodyRect.top;
+	var offset   = Math.floor(elemRect.bottom - bodyRect.top);
 
+	Session.set("offset", offset);
 	$('#nav-wrapper').height($("#nav").height());
 	$('#nav').affix({
 		offset: {
