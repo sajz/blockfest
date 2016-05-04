@@ -8,6 +8,82 @@
 		{{> flyer}}
 	{{/if}}
 
+<div id=nav-wrapper>
+<nav class="navbar navbar-inverse" data-spy="affix" id=nav>
+	<div class=container>
+		<ul class="nav navbar-nav">
+			<li role=presentation
+			id="accueil-tab"
+			class="{{#if $eq tab 'accueil'}}active{{/if}}">
+				<a href=# id=home-nav>
+					<img src={{getLogo}} class="svg inline" id=logo />
+					<div id=home-title class=inline></div>
+				</a>
+			</li>
+			<li role=presentation
+			id="program-tab"
+			class="{{#if $eq tab 'program'}}active{{/if}}">
+				<a href=#>Programme</a>
+			</li>
+			<li role=presentation
+			id="participate-tab"
+			class="{{#if $eq tab 'participate'}}active{{/if}}">
+				<a href=#>Billets</a>
+			</li>
+			<!--
+				<li role=presentation
+			id="rules-tab"
+			class="{{#if $eq tab 'rules'}}active{{/if}}">
+				<a href=#>Règles du jeu</a>
+			</li>
+			<li role=presentation
+			id="team-tab"
+			class="{{#if $eq tab 'team'}}active{{/if}}">
+				<a href=#>Équipe</a>
+			</li>
+			<li role=presentation
+			id="partners-tab"
+			class="{{#if $eq tab 'partners'}}active{{/if}}">
+				<a href=#>Partenaires</a>
+			</li>
+			<li role=presentation
+			id="info-tab"
+			class="{{#if $eq tab 'info'}}active{{/if}}">
+				<a href=#>Infos pratiques</a>
+			</li>
+			-->
+			
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li role=presentation
+			id="credits-tab"
+			class="{{#if $eq tab 'credits'}}active{{/if}}">
+				<a href=#>Crédits</a>
+			</li>
+			<li role=presentation
+			id="">
+				<a href="#" id=countdown>J - {{countDown}}</a>
+			</li>
+			<!--
+			{{#if currentUser}}
+			<li role=presentation
+			id="profile-tab"
+			class="{{#if $eq tab 'profile'}}active{{/if}}">
+				<a href=#>Mon profil</a>
+			</li>
+			{{else}}
+			<li role=presentation
+			id="loginButtons"
+			class="{{#if $eq tab 'profile'}}active{{/if}}">
+				{{>loginButtons}}
+			</li>
+			{{/if}}
+			-->
+		</ul>
+	</div>
+</nav>
+</div>
+
 <div class="container">
 
 	{{#if $eq tab "accueil"}}
@@ -39,82 +115,6 @@
 	{{/if}}
 
 </div>
-
-<footer>
-	<nav class="navbar navbar-inverse navbar-fixed-bottom">
-		<div class=container>
-			<ul class="nav navbar-nav">
-				<li role=presentation
-				id="accueil-tab"
-				class="{{#if $eq tab 'accueil'}}active{{/if}}">
-					<a href=# id=home-nav>
-						<img src={{getLogo}} class="svg inline" id=logo />
-						<div id=home-title class=inline></div>
-					</a>
-				</li>
-				<li role=presentation
-				id="program-tab"
-				class="{{#if $eq tab 'program'}}active{{/if}}">
-					<a href=#>Programme</a>
-				</li>
-				<li role=presentation
-				id="participate-tab"
-				class="{{#if $eq tab 'participate'}}active{{/if}}">
-					<a href=#>Billets</a>
-				</li>
-				<!--
-					<li role=presentation
-				id="rules-tab"
-				class="{{#if $eq tab 'rules'}}active{{/if}}">
-					<a href=#>Règles du jeu</a>
-				</li>
-				<li role=presentation
-				id="team-tab"
-				class="{{#if $eq tab 'team'}}active{{/if}}">
-					<a href=#>Équipe</a>
-				</li>
-				<li role=presentation
-				id="partners-tab"
-				class="{{#if $eq tab 'partners'}}active{{/if}}">
-					<a href=#>Partenaires</a>
-				</li>
-				<li role=presentation
-				id="info-tab"
-				class="{{#if $eq tab 'info'}}active{{/if}}">
-					<a href=#>Infos pratiques</a>
-				</li>
-				-->
-				
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li role=presentation
-				id="credits-tab"
-				class="{{#if $eq tab 'credits'}}active{{/if}}">
-					<a href=#>Crédits</a>
-				</li>
-				<li role=presentation
-				id="">
-					<a href="#" id=countdown>J - {{countDown}}</a>
-				</li>
-				<!--
-				{{#if currentUser}}
-				<li role=presentation
-				id="profile-tab"
-				class="{{#if $eq tab 'profile'}}active{{/if}}">
-					<a href=#>Mon profil</a>
-				</li>
-				{{else}}
-				<li role=presentation
-				id="loginButtons"
-				class="{{#if $eq tab 'profile'}}active{{/if}}">
-					{{>loginButtons}}
-				</li>
-				{{/if}}
-				-->
-			</ul>
-		</div>
-	</nav>
-</footer>
 
 {{else}}
 	{{> lock}}

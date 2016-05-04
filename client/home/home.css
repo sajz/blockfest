@@ -12,6 +12,10 @@
 	text-align: center;
 }
 
+.home-intro {
+	border: 1px solid black;
+}
+
 .intro-white {
 	color: white;
 	font-size: 26px;
@@ -128,7 +132,7 @@
 	font-style: italic;
 	/*
 	opacity: 0;
-	*/
+	 */
 }
 
 #partners {

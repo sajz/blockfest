@@ -48,6 +48,7 @@ Template.body.rendered = function () {
 	//	"background-color": "red",
 	//	"color": "black"
 	//});
+	//
 
 	Meteor.call("eventbrite", function (err, data) {
 		if (!err) {

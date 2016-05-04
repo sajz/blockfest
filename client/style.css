@@ -5,6 +5,20 @@ body {
 	overflow-y: scroll;
 }
 
+.affix {
+	top: 0;
+	width: 100%;
+	z-index: 9999 !important;
+}
+
+.nav-wrapper {
+	min-height: 50px;
+}
+
+.navbar {
+	border-radius: 0px;
+}
+
 h2 {
 	font-weight: 200;
 	font-family: 'Roboto';
@@ -30,9 +44,6 @@ h4 {
 
 p {
 	color: #868686;
-}
-
-#credits {
 }
 
 #logo {

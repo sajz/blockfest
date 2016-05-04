@@ -119,19 +119,19 @@ Template.accueil.helpers({
 			filename: rep + "thomassaintaubin.jpg"
 		},
 		/*{
-			name: "Alexandre Statchenko",
-			employment: "cofondateur",
-			workingPlace: "Blockchain France",
-			link: "http://culturesexpressives.fr/doku.php",
-			filename: rep + "laurenceallard.jpg"
-		},
-		{
-			name: "Alexandre Statchenko",
-			employment: "cofondateur",
-			workingPlace: "Blockchain France",
-			link: "http://culturesexpressives.fr/doku.php",
-			filename: rep + "laurenceallard.jpg"
-		},*/
+		  name: "Alexandre Statchenko",
+		  employment: "cofondateur",
+		  workingPlace: "Blockchain France",
+		  link: "http://culturesexpressives.fr/doku.php",
+		  filename: rep + "laurenceallard.jpg"
+		  },
+		  {
+		  name: "Alexandre Statchenko",
+		  employment: "cofondateur",
+		  workingPlace: "Blockchain France",
+		  link: "http://culturesexpressives.fr/doku.php",
+		  filename: rep + "laurenceallard.jpg"
+		  },*/
 		{
 			name: "Sébastien Couture",
 			employment: "Co-fondateur",
@@ -159,15 +159,26 @@ Template.accueil.helpers({
 });
 
 Template.accueil.rendered = function () {
-	/*
-	$("#home-btn-apply").hover(function () {
-		$("#application-description").animate({
-			opacity: 1
-		}, 250);
-	}, function () {
-		$("#application-description").animate({
-			opacity: 0
-		}, 250);
+	var bodyRect = document.body.getBoundingClientRect();
+	var elemRect = document.getElementById("home-intro").getBoundingClientRect();
+	var offset   = elemRect.bottom - bodyRect.top;
+
+	$('#nav-wrapper').height($("#nav").height());
+	$('#nav').affix({
+		offset: {
+			top: offset
+		}
 	});
-	*/
+
+	/*
+	   $("#home-btn-apply").hover(function () {
+	   $("#application-description").animate({
+	   opacity: 1
+	   }, 250);
+	   }, function () {
+	   $("#application-description").animate({
+	   opacity: 0
+	   }, 250);
+	   });
+	   */
 }
