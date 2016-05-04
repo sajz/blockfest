@@ -114,6 +114,19 @@
 		profil vous seront demandées à l'inscription.
 	</div>
 
+	{{> apply_btn}}
+
+	<div id=sponsors>
+	</div>
+
+	<div id=partners>
+	</div>
+
+	<div style=margin-bottom:100px;></div>
+
+</template>
+
+<template name="apply_btn">
 	<div class=div-center id=stay-tuned-container>
 		<div class=header>
 			<div class="input-group">
@@ -132,37 +145,6 @@
 			<h2>Merci !</h2>
 		</div>
 	</div>
-
-	<!--
-	 <div id=home-buttons>
-	 <button id=home-btn-program class="btn btn-default btn-home">
-	 programme
-	 </button>
-	 <button id=home-btn-apply class="btn btn-default btn-home">
-	 {{#if session "clickedApply"}}
-	 {{> apply_btn}}
-	 {{else}}
-	 stay tuned
-	 {{/if}}
-	 </button>
-	 <button id=home-btn-team class="btn btn-default btn-home">
-	 équipe
-	 </button>
-	 </div>
-	-->
-
-	<div id=sponsors>
-	</div>
-
-	<div id=partners>
-	</div>
-
-	<div style=margin-bottom:100px;></div>
-
-</template>
-
-<template name="apply_btn">
-	<input type=text class=form-control placeholder=email />
 </template>
 
 <template name="speaker">

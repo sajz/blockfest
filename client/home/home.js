@@ -1,10 +1,4 @@
-Template.accueil.events({
-	//"click #home-btn-program":	function () {Session.set("tab", "program");		},
-	//"click #home-btn-team":		function () {Session.set("tab", "team");		},
-	//"click #home-btn-apply": 	function (event) {
-	//	event.preventDefault();
-	//	Session.set("clickedApply", true);
-	//}
+Template.apply_btn.events({
 	"click #stay-tuned": function () {
 		Meteor.call("stayTuned", $("#email").val());
 		$("#stay-tuned-container").css({
