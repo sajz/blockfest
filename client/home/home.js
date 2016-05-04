@@ -76,7 +76,7 @@ Template.accueil.helpers({
 			filename: rep + "nicolasloubet.jpg"
 		},
 		{
-			name: "Sajida Zouahri",
+			name: "Sajida Zouarhi",
 			employment: "Ingénieure R&D",
 			workingPlace: "Orange Labs",
 			link: "https://www.linkedin.com/in/sajidazouarhi",
