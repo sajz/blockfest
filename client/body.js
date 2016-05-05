@@ -24,7 +24,7 @@ Template.body.helpers({
 	},
 	getLogo: function () {
 		var logo = "logo/logo";
-		var rand = Math.floor(Math.random() * 14) + 1;
+		var rand = Math.floor(Math.random() * 5) + 1;
 		return (logo + rand + ".svg");
 	}
 });
