@@ -1,4 +1,4 @@
-a=1
+wa=1
 for i in *.jpg; do
 	new=$(printf "%d.jpg" "$a") #04 pad to length of 4
 	mv -- "$i" "$new"

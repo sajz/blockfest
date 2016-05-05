@@ -43,6 +43,17 @@ Template.body.events({
 
 Template.body.rendered = function () {
 
+
+	  $(window).scroll(function () {
+
+	    if ($(window).scrollTop() > 700) {
+	      $('#nav-wrapper').removeClass('hidden');
+	    }
+	    if ($(window).scrollTop() < 700) {
+	      $('#nav-wrapper').addClass('hidden');
+	    }
+	  });
+
 	/*
 	Meteor.call("eventbrite", function (err, data) {
 		if (!err) {
