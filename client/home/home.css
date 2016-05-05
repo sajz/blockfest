@@ -12,6 +12,20 @@
 	text-align: center;
 }
 
+#partners {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.partner {
+	margin: 1em;
+	padding: 40px;
+	height: 200px;
+	border: 1px dashed black;
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
 #home-intro {
 	border: 1px dashed white;
 	padding-bottom: 30px;
