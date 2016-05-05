@@ -2,8 +2,6 @@
 
 {{home "accueil"}}
 
-{{#if has_access}}
-
 	{{#if $eq tab "accueil"}}
 		{{> flyer}}
 	{{/if}}
@@ -115,9 +113,5 @@
 	{{/if}}
 
 </div>
-
-{{else}}
-	{{> lock}}
-{{/if}}
 
 </body>
