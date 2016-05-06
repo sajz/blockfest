@@ -1,11 +1,8 @@
-#tickets {
-	margin-top: 40px;
-	margin-bottom: 60px;
-	width: 99%;
-	background-color: rgba(255, 255, 255, 0.1);
-	text-align: center;
-}
+#entete-billet{
+/*should be fixed in template*/
+	margin-top: 6rem;
 
+<<<<<<< HEAD
 .notcentered {
 	text-align: left;
 	font-weight: 200px;
@@ -37,16 +34,18 @@
 	padding: 10px;
 	border: 1px dashed white;
 }
+=======
+}
 
-#boxes-wrapper {
-	padding-top: 40px;
-	padding-bottom: 20px;
-	width: 100%;
-	margin: 0 auto;
-	display: inline-block;
+#pricing-billet{
+>>>>>>> 616cc58d8785925c9cbff27a0a43715465b629ec
+
 	text-align: center;
 	font-size: 120%;
 	font-weight: 400;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+
 }
 
 .box-title {
@@ -64,3 +63,21 @@
 	background-color: rgba(255, 255, 255, 0.1);
 	border: 1px dashed white;
 }
+#tickets {
+	margin-top: 40px;
+	margin-bottom: 60px;
+	width: 99%;
+	background-color: rgba(255, 255, 255, 0.1);
+	text-align: center;
+}
+
+.notcentered {
+	text-align: left;
+}
+
+#tickets td {
+	padding: 10px;
+	border: 1px dashed white;
+}
+
+
