@@ -19,6 +19,9 @@ body {
 	border-radius: 0px;
 }
 
+.hideablenav{
+	display:none;
+}
 #credits {
 	width: 500px;
 	margin: 0 auto;

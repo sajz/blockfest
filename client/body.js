@@ -26,6 +26,9 @@ Template.body.helpers({
 		var logo = "logo/logo";
 		var rand = Math.floor(Math.random() * 5) + 1;
 		return (logo + rand + ".svg");
+	},
+	scrollv: function (){
+		return (Session.get("scrollv"));
 	}
 });
 
@@ -45,13 +48,14 @@ Template.body.rendered = function () {
 
 
 	  $(window).scroll(function () {
+	  	Session.set("scrollv", $(window).scrollTop())
 
-	    if ($(window).scrollTop() > 700) {
-	      $('#nav-wrapper').removeClass('hidden');
-	    }
-	    if ($(window).scrollTop() < 700) {
-	      $('#nav-wrapper').addClass('hidden');
-	    }
+	    // if ($(window).scrollTop() > 700) {
+	    //   $('.hideablenav').removeClass('hidden');
+	    // }
+	    // if ($(window).scrollTop() < 700) {
+	    //   $('.hideablenav').addClass('hidden');
+	    // }
 	  });
 
 	/*

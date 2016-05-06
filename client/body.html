@@ -2,14 +2,10 @@
 
 {{home "accueil"}}
 
-{{#if has_access}}
-
-	{{#if $eq tab "accueil"}}
-		{{> flyer}}
-	{{/if}}
+<!-- {{#if has_access}} -->
 
 <div id=nav-wrapper>
-<nav class="navbar navbar-inverse" data-spy="affix" id=nav>
+<nav class="navbar navbar-inverse hideablenav{{#if $or ($gt scrollv 700) ($neq tab 'accueil')}}show{{/if}} " data-spy="affix"  id=nav>
 	<div class=container>
 		<ul class="nav navbar-nav">
 			<li role=presentation
@@ -84,6 +80,10 @@
 </nav>
 </div>
 
+	{{#if $eq tab "accueil"}}
+		{{> flyer}}
+	{{/if}}
+
 <div class="container">
 
 	{{#if $eq tab "accueil"}}
@@ -116,8 +116,8 @@
 
 </div>
 
-{{else}}
+<!-- {{else}}
 	{{> lock}}
-{{/if}}
+{{/if}} -->
 
 </body>
