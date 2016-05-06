@@ -2,7 +2,8 @@
 
 {{home "accueil"}}
 
-<!-- {{#if has_access}} -->
+{{#if has_access}}
+
 
 <div id=nav-wrapper>
 <nav class="navbar navbar-inverse hideablenav{{#if $or ($gt scrollv 700) ($neq tab 'accueil')}}show{{/if}} " data-spy="affix"  id=nav>
@@ -116,8 +117,9 @@
 
 </div>
 
-<!-- {{else}}
+{{else}}
 	{{> lock}}
-{{/if}} -->
+{{/if}}
+
 
 </body>
