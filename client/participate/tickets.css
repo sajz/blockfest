@@ -8,8 +8,31 @@
 
 .notcentered {
 	text-align: left;
+	font-weight: 200px;
+	font-size: 14px;
+}
+.notcenteredright {
+	text-align: right;
+	font-weight: 400px;
+	font-size: 18px;
 }
 
+.reduction {
+	text-align: center;
+	font-weight: 200px;
+	font-size: 14px;
+}
+
+.price {
+	text-align: center;
+	font-weight: 600;
+	font-size: 24px;
+}
+.pass {
+	text-align: center;
+	font-weight: 400;
+	font-size: 18px;
+}
 #tickets td {
 	padding: 10px;
 	border: 1px dashed white;
@@ -28,7 +51,7 @@
 
 .box-title {
 	padding-bottom: 20px;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .inline-boxes {
