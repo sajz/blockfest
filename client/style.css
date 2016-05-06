@@ -22,12 +22,10 @@ body {
 .hideablenav{
 	display:none;
 }
-#credits {
-	width: 500px;
-	margin: 0 auto;
-	text-align: center;
+
+.credits {
 	font-size: 120%;
-	color: white;
+	color: black;
 }
 
 h2 {
