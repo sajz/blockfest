@@ -67,7 +67,7 @@
 }
 
 #flyer-title {
-	height: 165px;
+	min-height: 165px;
 	position: relative;
 	overflow: hidden;
 	text-align:center;
