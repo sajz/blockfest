@@ -1,47 +1,60 @@
 <template name="participate">
 
-	<div class=div-center>
-		<div class=header>
+	<section id="entete-billet">
+		<div class="row text-center">
 			<h2>La billetterie du BlockFest</h2>
 			<br />
-			La billeterie ouvrira le 20 Mai<br />
+			La billetterie ouvrira le 20 Mai<br />
 			Nous ne serons pas en mesure de recevoir plus de ~120p pour les
 			conférences et ~40p par atelier. <br />
 			Pour garantir la mixité des participants, des informations sur votre
 			profil vous seront demandées à l'inscription.
 		</div>
-	</div>
+	</section>
 
-	<div id=boxes-wrapper>
-		<div class=inline-boxes>
-			<div class=box-title>
-				une conférence
+	<section id="pricing-billet">
+		<div class="row">
+			<div class="col-md-6">
+				<div class=inline-boxes>
+					<div class=box-title>
+						Une conférence
+					</div>
+					15€
+				</div>
 			</div>
-			15€
-		</div>
-		<div class=inline-boxes>
-			<div class=box-title>
-				étudiants 42
+			<div class="col-md-6">
+				<div class=inline-boxes>
+					<div class=box-title>
+						Étudiants 42
+					</div>
+					gratuit
+				</div>
 			</div>
-			gratuit
 		</div>
-		<div class=inline-boxes style=padding-top:10px;>
-			<div class=box-title>
-				réductions
-			</div>
-			étudiants / chômeurs / associations : -90%<br />
-			partenaires communautaires : -50%<br />
-			sponsors : -25%<br />
-		</div>
-		<div class=inline-boxes>
-			<div class=box-title>
-				BlockParty (jeudi 22h-2h)
-			</div>
-			5€
-		</div>
-	</div>
+		<div class="row">
+			<div class="col-md-6">
 
-	<div>
+				<div class=inline-boxes>
+					<div class=box-title>
+						Réductions
+					</div>
+					Partenaires communautaires, étudiants, demandeurs d'emploi et associations
+				</div>
+			</div>
+			<div class="col-md-6">
+
+				<div class=inline-boxes>
+					<div class=box-title>
+						BlockParty (jeudi 22h-2h)
+					</div>
+					5€
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section>
 		<table id=tickets>
 
 			<thead>
@@ -153,7 +166,7 @@
 
 			</tbody>
 		</table>
-	</div>
+	</section>
 
 	{{> apply_btn}}
 
