@@ -106,7 +106,7 @@ function getList() {
 	{
 		name: "Justine Hannequin",
 		employment: "Designer UX/UI",
-		workingPlace: "CRI",
+		workingPlace: "Freelance",
 		link: "https://www.linkedin.com/in/justine-hannequin-650b8642",
 		filename: rep + "justineha.jpg"
 	},
