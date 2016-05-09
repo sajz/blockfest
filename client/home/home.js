@@ -145,20 +145,27 @@ function getList() {
 		link: "https://www.linkedin.com/in/thomas-saint-aubin-116a3113",
 		filename: rep + "thomassaintaubin.jpg"
 	},
-	/*{
-	  name: "Alexandre Statchenko",
-	  employment: "cofondateur",
-	  workingPlace: "Blockchain France",
-	  link: "http://culturesexpressives.fr/doku.php",
-	  filename: rep + "laurenceallard.jpg"
-	  },
-	  {
-	  name: "Alexandre Statchenko",
-	  employment: "cofondateur",
-	  workingPlace: "Blockchain France",
-	  link: "http://culturesexpressives.fr/doku.php",
-	  filename: rep + "laurenceallard.jpg"
-	  },*/
+	{
+	  	name: "Alexandre Statchenko",
+	  	employment: "Co-fondateur",
+	  	workingPlace: "Blockchain France",
+	  	link: "https://www.linkedin.com/in/alexandre-stachtchenko-27655655",
+	  	filename: rep + "alexstach.jpg"
+	 },
+	 {
+	  	name: "Gilles Cadignan",
+	  	employment: "Fondateur",
+	  	workingPlace: "Woleet",
+	  	link: "https://www.linkedin.com/in/gilles-cadignan-08448995",
+	  	filename: rep + "gillescadignan.jpg"
+	 },
+	 {
+	  	name: "Mourdjen Bari",
+	  	employment: "Développeur",
+	  	workingPlace: "GameLab, CRI",
+	  	link: "http://cri-paris.org/team/mourdjen-bari/",
+	  	filename: rep + "mourdjen.jpg"
+	 },
 	{
 		name: "Sébastien Couture",
 		employment: "Co-fondateur",
