@@ -181,6 +181,13 @@ function getList() {
 		filename: rep + "jeromegiusti.jpg"
 	},
 	{
+		name: "Tom Wersinger",
+		employment: "Developpeur frontend / webapps & mobile",
+		workingPlace: ".",
+		link: "https://www.linkedin.com/in/tomwersinger",
+		filename: rep + "tomwersinger.jpg"
+	},
+	{
 		name: "Pol Gouasdoué",
 		employment: "UX & UI expert / Interaction Design",
 		workingPlace: "UFO",
