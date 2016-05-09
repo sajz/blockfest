@@ -1,4 +1,6 @@
-# blockfest
+# BlockFest
 
-Graphic documentation here : https://docs.google.com/presentation/d/1_kEp2ujvNMBJk9fRW0ImSB-VVxOJyIvhsZj45Xhza6Q/edit?usp=sharing
-CC-BY-NC-SA - BlockFest.16
+WebSite of BlockFest event , 6 - 12 June 2016 - Ecole 42 - Paris
+
+CC-BY-NC-SA - BlockFest
+
