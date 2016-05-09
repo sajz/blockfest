@@ -181,6 +181,13 @@ function getList() {
 		filename: rep + "jeromegiusti.jpg"
 	},
 	{
+		name: "Pol Gouasdoué",
+		employment: "UX & UI expert / Interaction Design",
+		workingPlace: "UFO",
+		link: "https://www.linkedin.com/in/polgoasdoue",
+		filename: rep + "polgouasdoue.jpg"
+	},
+	{
 		name: "Laura Champion",
 		employment: "Responsable de la communication",
 		workingPlace: "EEIE",
