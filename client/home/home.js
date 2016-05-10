@@ -193,7 +193,21 @@ function getList() {
 		workingPlace: "UFO",
 		link: "https://www.linkedin.com/in/polgoasdoue",
 		filename: rep + "polgouasdoue.jpg"
+	},/*
+	{
+		name: "Sophie Pène",
+		employment: "UX & UI expert / Interaction Design",
+		workingPlace: "UFO",
+		link: "https://www.linkedin.com/in/polgoasdoue",
+		filename: rep + "polgouasdoue.jpg"
 	},
+	{
+		name: "Salma Mesmoudi",
+		employment: "UX & UI expert / Interaction Design",
+		workingPlace: "UFO",
+		link: "https://www.linkedin.com/in/polgoasdoue",
+		filename: rep + "polgouasdoue.jpg"
+	},*/
 	{
 		name: "Laura Champion",
 		employment: "Responsable de la communication",
