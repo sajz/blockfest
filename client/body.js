@@ -46,9 +46,10 @@ Template.body.events({
 
 Template.body.rendered = function () {
 
-	  $(window).scroll(function () {
-	  	Session.set("scrollv", $(window).scrollTop())
-	  });
+	$(window).scroll(function () {
+		Session.set("scrollv", $(window).scrollTop())
+	});
 
-
+	//$('html').attr("xmlns:fb","http://ogp.me/ns/fb#");
+	//$("head").attr("prefix", "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#");
 };
