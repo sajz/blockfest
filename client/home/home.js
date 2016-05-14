@@ -193,7 +193,15 @@ function getList() {
 		workingPlace: "UFO",
 		link: "https://www.linkedin.com/in/polgoasdoue",
 		filename: rep + "polgouasdoue.jpg"
-	},/*
+	},
+	{
+		name: "Benjamin Tincq",
+		employment: "Ouishare cofounder & core connector",
+		workingPlace: "ouishare",
+		link: "http://ouishare.net/en/profile/27",
+		filename: rep + "BenjaminTincq.jpg"
+	},
+	/*
 	{
 		name: "Sophie Pène",
 		employment: "UX & UI expert / Interaction Design",
