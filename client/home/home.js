@@ -224,5 +224,10 @@ function getList() {
 		filename: rep + "laurachampion.jpg"
 	}
 	];
+	list = list.sort(function (a, b) {
+		aname = a.name.split(" ")[1];
+		bname = b.name.split(" ")[1];
+		return (aname > bname);
+	});
 	return (list);
 }
