@@ -74,29 +74,7 @@
 			<div class="clearfix colelem" id="program-title">
 				<h2>Le Programme</h2>
 			</div>
-
-			<div class="clearfix colelem day-title">
-				<p>Lundi - Qu’est-ce que la Blockchain ? État des lieux technologique et idéologique.</p>
-			</div>
-			<div class="clearfix colelem day-entry">
-
-				<div class="clearfix grpelem times">
-					<div class="clearfix colelem start">
-						<p>15h</p>
-					</div>
-					<div class="clearfix colelem stop">
-						<p>16h</p>
-					</div>
-				</div>
-				<div class="clearfix grpelem room">
-					<p>salle</p>
-				</div>
-				<div class="clearfix grpelem entry-title">
-					<p>&nbsp;Etat des lieux des blockchains (technique)</p>
-				</div>
-
-			</div>
-
+			{{> day}}
 		</div>
 	</div>
 
@@ -104,18 +82,80 @@
 
 </template>
 
-<template name="program_entry">
-	<div class=entry-container>
-		<div class="entry-time">
-			XXh<br />
-			XXh
-		</div>
-		<div class="entry-room">
-			Salle
-		</div>
-		<div class="entry-name">
-			nom de l'entrée
-		</div>
+<template name="day">
+	<div class="clearfix colelem day-title">
+		<p>Lundi - Qu’est-ce que la Blockchain ? État des lieux technologique et idéologique.</p>
+	</div>
+	<div class="clearfix colelem day-entry">
+		{{> day_entry}}
 	</div>
 </template>
+
+<template name="day_entry">
+	<div class="clearfix grpelem times">
+		<div class="clearfix colelem start">
+			<p>15h</p>
+		</div>
+		<div class="clearfix colelem stop">
+			<p>16h</p>
+		</div>
+	</div>
+	<div class="clearfix grpelem room">
+		<p>salle</p>
+	</div>
+	<div class="clearfix grpelem entry-title">
+		<p>&nbsp;Etat des lieux des blockchains (technique)</p>
+	</div>
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
