@@ -10,7 +10,8 @@ Template.program.helpers({
 	},
 	session:		function (key) {
 		return (Session.get(key));
-	}
+	},
+	days: getDays()
 });
 
 Template.program.rendered = function () {
@@ -34,4 +35,23 @@ Template.program.rendered = function () {
 		}, 'xml');
 	});
 
+}
+
+function getDays() {
+	var days = [
+		{
+			name: "Lundi",
+			descr: "Qu’est-ce que la Blockchain ? État des lieux technologique et idéologique.",
+			entries: [
+				{
+					start: "15h",
+					stop: "16h",
+					room: "salle",
+					descr: "Etat des lieux des blockchains (technique)"
+				}
+			]
+		}
+	];
+
+	return (days);
 }

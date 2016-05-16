@@ -74,7 +74,9 @@
 			<div class="clearfix colelem" id="program-title">
 				<h2>Le Programme</h2>
 			</div>
-			{{> day}}
+			{{#each days}}
+				{{> day}}
+			{{/each}}
 		</div>
 	</div>
 
@@ -84,27 +86,29 @@
 
 <template name="day">
 	<div class="clearfix colelem day-title">
-		<p>Lundi - Qu’est-ce que la Blockchain ? État des lieux technologique et idéologique.</p>
+		<p>{{name}} - {{descr}}</p>
 	</div>
 	<div class="clearfix colelem day-entry">
-		{{> day_entry}}
+		{{#each entries}}
+			{{> day_entry}}
+		{{/each}}
 	</div>
 </template>
 
 <template name="day_entry">
 	<div class="clearfix grpelem times">
 		<div class="clearfix colelem start">
-			<p>15h</p>
+			<p>{{start}}</p>
 		</div>
 		<div class="clearfix colelem stop">
-			<p>16h</p>
+			<p>{{stop}}</p>
 		</div>
 	</div>
 	<div class="clearfix grpelem room">
-		<p>salle</p>
+		<p>{{room}}</p>
 	</div>
 	<div class="clearfix grpelem entry-title">
-		<p>&nbsp;Etat des lieux des blockchains (technique)</p>
+		<p>{{descr}}</p>
 	</div>
 </template>
 
