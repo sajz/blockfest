@@ -46,8 +46,32 @@ function getDays() {
 				{
 					start: "15h",
 					stop: "16h",
-					room: "salle",
+					room: "Atelier",
 					descr: "Etat des lieux des blockchains (technique)"
+				},
+				{
+					start: "16h",
+					stop: "17h",
+					room: "Atelier",
+					descr: "Créer son identité sur la blockchain"
+				},
+				{
+					start: "17h",
+					stop: "18h",
+					room: "Atelier",
+					descr: "Blockchain 101 : théorie mathématique et technologies existantes"
+				},
+				{
+					start: "18h",
+					stop: "19h30",
+					room: "Conférence",
+					descr: "État des lieux des initiatives publiques et privées, réflexions sur les idéologies derrière les technologies"
+				},
+				{
+					start: "21h",
+					stop: "23h",
+					room: "Cantina",
+					descr: "Cocktail"
 				}
 			]
 		}

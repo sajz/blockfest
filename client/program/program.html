@@ -88,7 +88,7 @@
 	<div class="clearfix colelem day-title">
 		<p>{{name}} - {{descr}}</p>
 	</div>
-	<div class="clearfix colelem day-entry">
+	<div class="clearfix colelem day">
 		{{#each entries}}
 			{{> day_entry}}
 		{{/each}}
@@ -96,20 +96,23 @@
 </template>
 
 <template name="day_entry">
-	<div class="clearfix grpelem times">
-		<div class="clearfix colelem start">
-			<p>{{start}}</p>
+	<div class=day-entry>
+		<div class="clearfix grpelem times">
+			<div class="clearfix colelem start">
+				<p>{{start}}</p>
+			</div>
+			<div class="clearfix colelem stop">
+				<p>{{stop}}</p>
+			</div>
 		</div>
-		<div class="clearfix colelem stop">
-			<p>{{stop}}</p>
+		<div class="clearfix grpelem room">
+			<p>{{room}}</p>
+		</div>
+		<div class="clearfix grpelem entry-title">
+			<p>{{descr}}</p>
 		</div>
 	</div>
-	<div class="clearfix grpelem room">
-		<p>{{room}}</p>
-	</div>
-	<div class="clearfix grpelem entry-title">
-		<p>{{descr}}</p>
-	</div>
+	<div class="verticalspacer"></div>
 </template>
 
 
