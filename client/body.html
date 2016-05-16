@@ -56,6 +56,11 @@
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<li role=presentation
+			id="base-tab"
+			class="{{#if $eq tab 'base'}}active{{/if}}">
+				<a href=#>Base</a>
+			</li>
+			<li role=presentation
 			id="credits-tab"
 			class="{{#if $eq tab 'credits'}}active{{/if}}">
 				<a href=#>Crédits</a>
@@ -106,6 +111,9 @@
 	{{/if}}
 	{{#if $eq tab "info"}}
 		{{> info}}
+	{{/if}}
+	{{#if $eq tab "base"}}
+		{{> base_test}}
 	{{/if}}
 	{{#if $eq tab "credits"}}
 		{{> credits}}

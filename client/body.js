@@ -41,6 +41,7 @@ Template.body.events({
 	"click #partners-tab":		function () {Session.set("tab", "partners");	},
 	"click #info-tab":			function () {Session.set("tab", "info");		},
 	"click #credits-tab":		function () {Session.set("tab", "credits");		},
+	"click #base-tab":			function () {Session.set("tab", "base");		},
 	"click #profile-tab":		function () {Session.set("tab", "profile");		}
 });
 
