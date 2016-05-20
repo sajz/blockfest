@@ -50,6 +50,46 @@ Template.body.rendered = function () {
 		Session.set("scrollv", $(window).scrollTop())
 	});
 
-	//$('html').attr("xmlns:fb","http://ogp.me/ns/fb#");
+	$('html').attr("xmlns","http://www.w3.org/1999/");
+	$('html').attr("xmlns:fb","http://ogp.me/ns/fb#");
 	//$("head").attr("prefix", "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#");
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
