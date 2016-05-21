@@ -42,7 +42,7 @@
 }
 
 .day-entry {
-	height: 60px;
+	height: 70px;
 }
 
 .times
@@ -56,7 +56,7 @@
 .start
 {
 	z-index: 15;
-	padding-top: 4px;
+	padding-top: 10px;
 	text-align: center;
 	position: relative;
 	width: 100%;
@@ -78,13 +78,13 @@
 .room
 {
 	z-index: 23;
-	height: 60px;
+	height: 70px;
 	background-color: rgba(255, 255, 255, 0.3);
 	padding-top: 20px;
 	text-align: center;
 	position: relative;
 	margin-right: -10000px;
-	width: 7.5%;
+	width: 10%;
 	left: 7.5%;
 }
 
@@ -94,12 +94,14 @@
 	min-height: 35px;
 	background-color: transparent;
 	font-size: 20px;
-	padding-top: 17px;
 	padding-left: 20px;
 	position: relative;
 	margin-right: -10000px;
-	width: 85%;
-	left: 15%;
+	width: 92.5%;
+	left: 7.5%;
+	position: relative;
+	top: 54%;
+	transform: translateY(-50%);
 }
 
 .colelem /* a child element of a column */
