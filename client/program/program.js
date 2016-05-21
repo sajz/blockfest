@@ -69,25 +69,61 @@ function getDays() {
 					start: "17h",
 					stop: "19h",
 					room: "Terre du Milieu",
-					descr: "Pré-Sprint : Introduction au week-end, aux valeurs, aux objecitfs. Introduction aux procédés et exigences de documentation."
+					descr: "Pré-Sprint : Introduction au week-end, aux valeurs, aux objectifs."
 				},
 				{
 					start: "19h",
 					stop: "--h",
 					room: "Holodeck",
-					descr: "Lancement du BlockSprint"
+					descr: "Barcamp : venez pitcher vos idées. Le BlockSprint sera un moment de création collective, pour construire des projets blockchain et une base de connaissance ouverte."
 				}
 			]
 		},
 		{
-			name: "Samedi 11 & Dimanche 12 Juin",
+			name: "Samedi 11 Juin",
 			descr: "BlockSprint",
 			entries: [
 				{
-					start: "--h",
-					stop: "18h",
+					start: "08h30",
+					stop: "09h",
 					room: "Terre du Milieu",
-					descr: "Le BlockSprint sera un moment de création collective, pour construire des projets blockchain et une base de connaissance ouverte."
+					descr: "Petit déjeunner"
+				},
+				{
+					start: "09h",
+					stop: "11h",
+					room: "Terre du Milieu",
+					descr: "Ateliers Techniques pour chaque Dojo par les mentors"
+				}
+			]
+		},
+		{
+			name: "Dimanche 12 Juin",
+			descr: "BlockSprint",
+			entries: [
+				{
+					start: "08h30",
+					stop: "09h",
+					room: "Terre du Milieu",
+					descr: "Petit déjeunner"
+				},
+				{
+					start: "12h",
+					stop: "--h",
+					room: "Terre du Milieu",
+					descr: "Deadline de rendu des présentations"
+				},
+				{
+					start: "14h30",
+					stop: "16h",
+					room: "Terre du Milieu",
+					descr: "Démos & Pitchs"
+				},
+				{
+					start: "18h",
+					stop: "19h",
+					room: "Terre du Milieu",
+					descr: "Annonce des résultats et clôture"
 				}
 			]
 		}
