@@ -94,6 +94,12 @@ function getDays() {
 					stop: "11h",
 					room: "Terre du Milieu",
 					descr: "Ateliers Techniques pour chaque Dojo par les mentors"
+				},
+				{
+					start: "11h",
+					stop: "--h",
+					room: "Terre du Milieu",
+					descr: "BlockSprint"
 				}
 			]
 		},
