@@ -19,10 +19,15 @@
 	overflow: hidden;
 }
 
+@keyframes fadeIn {
+	from { opacity: 0; }
+}
+
 .flyer-arrow {
 	margin-top: 0px;
 	width: 220px;
 	height: 13px;
+	animation: fadeIn 2s infinite alternate;
 }
 .cover {
 	width: 50%;
@@ -43,10 +48,10 @@
 
 /*
 #flyer-image:hover #ipfs-toggle {
-	opacity: 0.8;
-	transition: opacity .25s ease-in-out;
+opacity: 0.8;
+transition: opacity .25s ease-in-out;
 }
-*/
+ */
 
 #flyer-image:hover #refresh-toggle {
 	opacity: 0.8;
@@ -60,6 +65,7 @@
 	top: 3px;
 	right: 10px;
 	z-index: 100;
+	animation: fadeIn 2s infinite alternate;
 }
 #refresh-toggle span {
 	color: white;
@@ -75,8 +81,8 @@
 	padding-top: 7px;
 }
 #flyer-suptitle {
-/*	margin-top: -32px;*/
-/*	font-size: 30px;*/
+	/*	margin-top: -32px;*/
+	/*	font-size: 30px;*/
 	text-align: center;
 	margin-bottom: 0px;
 }
@@ -85,7 +91,7 @@
 	margin-top: -40px;
 	font-size: 27px;
 	text-align: center;
-/*	margin-bottom: 12px;*/
+	/*	margin-bottom: 12px;*/
 }
 
 #flyer-info {

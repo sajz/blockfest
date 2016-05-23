@@ -23,7 +23,7 @@
 	height: 100px;
 	border: 1px dashed white;
 	display: inline-block;
-	background-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 #home-intro {
@@ -33,17 +33,38 @@
 	margin-top: 40px;
 }
 
+.tech-logo {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.tech-logo img {
+	height: 20rem;
+	width: 20rem;
+	margin: auto;
+	margin-bottom: 30px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+}
+
 .intro-white {
 	color: white;
 	font-size: 26px;
 	font-weight: 300;
+	width: 100%;
 }
 
 .intro-white-small {
-	width: 690px;
+	width: 100%;
 	color: white;
-	font-size: 20px;
-	font-weight: 200;
+	font-size: 26px;
+	line-height: 180%;
+	font-weight: 400;
+	padding-bottom: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: 1px dashed white;
 }
 
 /*.intro-black {
@@ -53,6 +74,7 @@
 
 #stay-tuned-container {
 	border: 1px dotted white;
+	margin-bottom: 100px;
 }
 
 .stay-tuned-form {
@@ -162,7 +184,7 @@
 
 .speaker-name {
 	target-new: tab;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.6);
 /*	border-radius: 4px;*/
 	overflow: hidden;
 	padding-left: 5px;

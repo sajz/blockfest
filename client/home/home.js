@@ -84,14 +84,14 @@ function getList() {
 	},		
 	{
 		name: "Xavier Lavayssière",
-		employment: "Cofondateur",
+		employment: "cofondateur",
 		workingPlace: "Les Bricodeurs",
 		link: "https://www.linkedin.com/in/lavayssiere/fr",
 		filename: rep + "xavierlava.jpg"
 	},		
 	{
 		name: "Nicolas Loubet",
-		employment: "Cofondateur",
+		employment: "cofondateur",
 		workingPlace: "Cellabz & DAISEE",
 		link: "https://www.linkedin.com/in/nicolasloubet",
 		filename: rep + "nicolasloubet.jpg"
@@ -111,8 +111,8 @@ function getList() {
 		filename: rep + "justineha.jpg"
 	},
 	{
-		name: "Pierre Alexis Ciavaldini",
-		employment: "Étudiant 42, Coordinateur",
+		name: "Pierre-Alexis Ciavaldini",
+		employment: "Étudiant à 42, fondateur",
 		workingPlace: "Makernet",
 		link: "https://www.linkedin.com/in/pciavald",
 		filename: rep + "pierrealexis.jpg"
@@ -147,7 +147,7 @@ function getList() {
 	},
 	{
 	  	name: "Alexandre Statchenko",
-	  	employment: "Co-fondateur",
+	  	employment: "cofondateur",
 	  	workingPlace: "Blockchain France",
 	  	link: "https://www.linkedin.com/in/alexandre-stachtchenko-27655655",
 	  	filename: rep + "alexstach.jpg"
@@ -168,7 +168,7 @@ function getList() {
 	 },
 	{
 		name: "Sébastien Couture",
-		employment: "Co-fondateur",
+		employment: "cofondateur",
 		workingPlace: "Stratumm",
 		link: "https://www.linkedin.com/in/couturesebastien",
 		filename: rep + "sebastiencout.jpg"
@@ -193,7 +193,15 @@ function getList() {
 		workingPlace: "UFO",
 		link: "https://www.linkedin.com/in/polgoasdoue",
 		filename: rep + "polgouasdoue.jpg"
-	},/*
+	},
+	{
+		name: "Benjamin Tincq",
+		employment: "Ouishare cofounder & core connector",
+		workingPlace: "ouishare",
+		link: "http://ouishare.net/en/profile/27",
+		filename: rep + "BenjaminTincq.jpg"
+	},
+	/*
 	{
 		name: "Sophie Pène",
 		employment: "UX & UI expert / Interaction Design",
@@ -216,5 +224,10 @@ function getList() {
 		filename: rep + "laurachampion.jpg"
 	}
 	];
+	list = list.sort(function (a, b) {
+		aname = a.name.split(" ")[1];
+		bname = b.name.split(" ")[1];
+		return (aname > bname);
+	});
 	return (list);
 }

@@ -1,178 +1,100 @@
 <template name="program">
 
-	<div class="div-center">
-		<div id=ethics>
-			<h2>Les principes du BlockFest</h2>
+	<div class="clearfix borderbox">
+		<div class="clearfix colelem" id="program">
+			<div class="clearfix colelem" id="program-title">
+				<h2>Le Programme</h2>
+			</div>
+			{{#each days}}
+				{{> day}}
+			{{/each}}
 		</div>
 	</div>
 
-	<table id=program-header class=header>
-		<tr>
+	<div style=margin-bottom:80px;></div>
 
-			<td>
-				<div class=div-center>
-					<div class=header>
-						<div class="inline">
-							<h3>Balayage à 360°</h3>
-						</div>
-					</div>
-				</div>
-			</td>
-
-			<td>
-				<div class=div-center>
-					<div class=header>
-						<div class="inline">
-							<h3>Un état d'esprit</h3>
-						</div>
-					</div>
-				</div>
-			</td>
-
-			<td>
-				<div class=div-center>
-					<div class=header>
-						<div class="inline">
-							<img src="picto/apprendre.svg" class="svg svg-title">
-						</div>
-						<div class="inline">
-							<h3>Une initiative contributive</h3>
-						</div>
-					</div>
-				</div>
-			</td>
-
-		</tr>
-		<tr>
-
-			<td>
-				<div>
-					<img src="picto/nuage.svg" class=svg id=nuage height=200px>
-				</div>
-			</td>
-
-			<td>
-				<div class=div-center>
-					<div class=header>
-						<img src="picto/esprit.svg" class=svg>
-					</div>
-				</div>
-			</td>
-
-			<td>
-				<div>
-					<img src="picto/program.svg" class=svg>
-				</div>
-				<!--
-		<div class=div-center>
-		<div class=header style=margin-bottom:30px;margin-top:30px;>
-		<div class=join-group>
-		<div>
-		<img src="picto/partager.svg" class="svg svg-content2">
-		</div>
-		<div class=centered>
-		Organisation autonome Coopétition et entraide
-		</div>
-		</div>
-		<div class=join-group>
-		<div>
-		<img src="picto/documenter.svg" class="svg svg-content2">
-		</div>
-		<div class=centered>
-		Documentation<br />ouverte
-		</div>
-		</div>
-		<div class=join-group>
-		<div>
-		<img src="picto/outils.svg" class="svg svg-content2">
-		</div>
-		<div class=centered>
-		Des outils<br />dédiés
-		</div>
-		</div>
-		</div>
-		</div>
-		<div class=div-center>
-		<div class=header>
-		<div class=join-group>
-		<div>
-		<img src="picto/credit.svg" class="svg svg-content2">
-		</div>
-		<div class=centered>
-		Feedback et Crédit
-		</div>
-		</div>
-		<div class=join-group>
-		<div>
-		<img src="picto/roles.svg" class="svg svg-content2">
-		</div>
-		<div class=centered>
-		Interactions<br/>multiples
-		</div>
-		</div>
-		</div>
-		</div>
-				-->
-			</td>
-
-		</tr>
-	</table>
-
-	<!--
-	 <div id=program-content>
-	 <div class=centered>
-	 <h3>Le programme</h3>
-	 </div>
-	 <table>
-	 <tr>
-	 <td>
-	 <div class=program-day-title>
-	 MARDI
-	 </div>
-	 <div>
-	 titre de la journée
-	 </div>
-	 <div class=program-entry>
-	 {{> program_entry}}
-	 </div>
-	 </td>
-	 <td>
-	 <div class=program-day-title>
-	 MERCREDI
-	 </div>
-	 <div>
-	 titre de la journée
-	 </div>
-	 <div class=program-entry>
-	 {{> program_entry}}
-	 </div>
-	 </td>
-	 </tr>
-	 </table>
-	 </div>
-	-->
-
-	<div id=comingsoon>
-		Le programme du BlockFest 1.0 sera disponible <br />
-		dans les prochains jours.
-	</div>
+	{{> apply_btn}}
 
 	<div style=margin-bottom:200px;></div>
 
 </template>
 
-<template name="program_entry">
-	<div class=entry-container>
-		<div class="entry-time">
-			XXh<br />
-			XXh
-		</div>
-		<div class="entry-room">
-			Salle
-		</div>
-		<div class="entry-name">
-			nom de l'entrée
-		</div>
+<template name="day">
+	<div class="clearfix colelem day-title">
+		<p>{{name}} - {{descr}}</p>
+	</div>
+	<div class="clearfix colelem day">
+		{{#each entries}}
+			{{> day_entry}}
+		{{/each}}
 	</div>
 </template>
+
+<template name="day_entry">
+	<div class=day-entry>
+		<div class="clearfix grpelem times">
+			<div class="clearfix colelem start">
+				<p>{{start}}</p>
+			</div>
+			<div class="clearfix colelem stop">
+				<p>{{stop}}</p>
+			</div>
+		</div>
+		<div class="clearfix grpelem entry-title">
+			<p>{{descr}}</p>
+		</div>
+	</div>
+	<div class="verticalspacer"></div>
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

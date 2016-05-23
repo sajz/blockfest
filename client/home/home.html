@@ -12,6 +12,77 @@
 
 	{{> home_intro}}
 
+	{{> apply_btn}}
+
+	<div class="div-center">
+		<div id=ethics>
+			<h2>Les principes du BlockFest</h2>
+		</div>
+	</div>
+
+	<table id=program-header class=header>
+		<tr>
+
+			<td>
+				<div class=div-center>
+					<div class=header>
+						<div class="inline">
+							<h3>Balayage à 360°</h3>
+						</div>
+					</div>
+				</div>
+			</td>
+
+			<td>
+				<div class=div-center>
+					<div class=header>
+						<div class="inline">
+							<h3>Un état d'esprit</h3>
+						</div>
+					</div>
+				</div>
+			</td>
+
+			<td>
+				<div class=div-center>
+					<div class=header>
+						<div class="inline">
+							<img src="picto/apprendre.svg" class="svg svg-title">
+						</div>
+						<div class="inline">
+							<h3>Une initiative contributive</h3>
+						</div>
+					</div>
+				</div>
+			</td>
+
+		</tr>
+		<tr>
+
+			<td>
+				<div>
+					<img src="picto/nuage.svg" class=svg id=nuage height=200px>
+				</div>
+			</td>
+
+			<td>
+				<div class=div-center>
+					<div class=header>
+						<img src="picto/esprit.svg" class=svg>
+					</div>
+				</div>
+			</td>
+
+			<td>
+				<div>
+					<img src="picto/program.svg" class=svg>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+
+
 	<div class=div-center>
 		<div class=header style=margin-top:45px>
 			<h2>
@@ -29,7 +100,7 @@
 							<img src="picto/telescope.svg" class="svg svg-title">
 						</div>
 						<div class="inline">
-							<h3>En semaine</h3>
+							<h3>Pré-sprint</h3>
 						</div>
 					</div>
 				</div>
@@ -53,10 +124,10 @@
 					<div class=header>
 						<div class=join-group>
 							<div>
-								<img src="picto/table_r.svg" class="svg svg-content">
+								<img src="picto/test.svg" class="svg svg-content">
 							</div>
 							<div class=centered>
-								<h4>Des conférencess</h4>
+								<h4>Des meetups</h4>
 							</div>
 						</div>
 						<div class=join-group>
@@ -65,14 +136,6 @@
 							</div>
 							<div class=centered>
 								<h4>Des ateliers</h4>
-							</div>
-						</div>
-						<div class=join-group>
-							<div>
-								<img src="picto/test.svg" class="svg svg-content">
-							</div>
-							<div class=centered>
-								<h4>Utilisez des blockchains</h4>
 							</div>
 						</div>
 					</div>
@@ -116,7 +179,7 @@
 
 	<div class=div-center id=speakers-title>
 		<div class=header>
-			<h2>Nos partenaires</h2>
+			<h2>Nos sponsors</h2>
 		</div>
 	</div>
 	
@@ -124,16 +187,30 @@
 		<div class=partner>
 			<img src="partenaires/deloitte.png" style=height:100%;>
 		</div>
-		<!--
 		<div class=partner>
 			<img src="partenaires/rci.png" style=height:100%;>
 		</div>
-		-->
+		<div class=partner>
+			<img src="partenaires/engie.png" style=height:100%;>
+		</div>
+		<div class=partner style=padding:5px;>
+			<img src="partenaires/cdd.jpg" style=height:100%;>
+		</div>
+	</div>
+
+	<div class=div-center id=speakers-title>
+		<div class=header>
+			<h2>Avec le soutien de</h2>
+		</div>
+	</div>
+	
+	<div id=partners>
+		<div class=partner>
+			<img src="partenaires/paris.png" style=height:100%;>
+		</div>
 	</div>
 
 	<div style=margin-bottom:100px;></div>
-
-	{{> apply_btn}}
 
 	<div id=sponsors>
 	</div>
@@ -145,11 +222,22 @@
 <template name="apply_btn">
 	<div class=div-center id=stay-tuned-container>
 		<div class=header>
+			<div class=div-center>
+				<div class=intro-white>
+					<br /><b>Rejoignez-nous du 9 au 12 Juin à l'École 42 !</b>
+				</div>
+			</div>
 			<div id=stay-tuned-header>
 				<strong>
-				Soyez prévenus de l'ouverture des inscriptions
+					Les inscriptions sont ouvertes : 25€
 				</strong>
 			</div>
+			<div>
+				<a href="https://www.eventbrite.fr/e/billets-le-blockfest-10-24632664964" target=_blank >
+				<img src=eventbrite.png alt=eventbrite />
+				</a>
+			</div>
+			<!--
 			<div class="input-group stay-tuned-form">
 				<input id=email type="text" class="form-control" placeholder="email">
 				<span class="input-group-btn">
@@ -158,13 +246,10 @@
 					</button>
 				</span>
 			</div>
+			-->
 			<div id=application-description>
-				Les inscriptions seront ouvertes du 12 au 20 Mai 2016<br />
-				Nous ne serons pas en mesure de recevoir plus de ~120p pour les
-				conférences et ~40p par atelier. <br />
 				Pour garantir la mixité des participants, des informations sur votre
 				profil vous seront demandées à l'inscription.<br />
-				Le résultat des selections sera communiqué au plus tard le mardi 24 Mai
 			</div>
 		</div>
 	</div>
