@@ -75,7 +75,7 @@ function getDays() {
 					start: "22h30",
 					stop: "00h",
 					room: "Holodeck",
-					descr: "BlockChill : expériences sonores sensorielles"
+					descr: "BlockChill : expériences interactives, sonores et visuelles"
 				}
 			]
 		},
