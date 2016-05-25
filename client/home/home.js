@@ -153,13 +153,6 @@ function getList() {
 	  	filename: rep + "alexstach.jpg"
 	 },
 	 {
-	  	name: "Gilles Cadignan",
-	  	employment: "Fondateur",
-	  	workingPlace: "Woleet",
-	  	link: "https://www.linkedin.com/in/gilles-cadignan-08448995",
-	  	filename: rep + "gillescadignan.jpg"
-	 },
-	 {
 	  	name: "Mourdjen Bari",
 	  	employment: "Développeur",
 	  	workingPlace: "GameLab, CRI",
