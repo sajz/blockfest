@@ -146,19 +146,19 @@ function getList() {
 		filename: rep + "thomassaintaubin.jpg"
 	},
 	{
-	  	name: "Alexandre Statchenko",
-	  	employment: "cofondateur",
-	  	workingPlace: "Blockchain France",
-	  	link: "https://www.linkedin.com/in/alexandre-stachtchenko-27655655",
-	  	filename: rep + "alexstach.jpg"
-	 },
-	 {
-	  	name: "Mourdjen Bari",
-	  	employment: "Développeur",
-	  	workingPlace: "GameLab, CRI",
-	  	link: "http://cri-paris.org/team/mourdjen-bari/",
-	  	filename: rep + "mourdjen.jpg"
-	 },
+		name: "Alexandre Statchenko",
+		employment: "cofondateur",
+		workingPlace: "Blockchain France",
+		link: "https://www.linkedin.com/in/alexandre-stachtchenko-27655655",
+		filename: rep + "alexstach.jpg"
+	},
+	{
+		name: "Mourdjen Bari",
+		employment: "Développeur",
+		workingPlace: "GameLab, CRI",
+		link: "http://cri-paris.org/team/mourdjen-bari/",
+		filename: rep + "mourdjen.jpg"
+	},
 	{
 		name: "Sébastien Couture",
 		employment: "cofondateur",
@@ -194,21 +194,6 @@ function getList() {
 		link: "http://ouishare.net/en/profile/27",
 		filename: rep + "BenjaminTincq.jpg"
 	},
-	/*
-	{
-		name: "Sophie Pène",
-		employment: "UX & UI expert / Interaction Design",
-		workingPlace: "UFO",
-		link: "https://www.linkedin.com/in/polgoasdoue",
-		filename: rep + "polgouasdoue.jpg"
-	},
-	{
-		name: "Salma Mesmoudi",
-		employment: "UX & UI expert / Interaction Design",
-		workingPlace: "UFO",
-		link: "https://www.linkedin.com/in/polgoasdoue",
-		filename: rep + "polgouasdoue.jpg"
-	},*/
 	{
 		name: "Laura Champion",
 		employment: "Responsable de la communication",
