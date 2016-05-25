@@ -36,28 +36,46 @@ function getDays() {
 			descr: "Session préparatoire",
 			entries: [
 				{
-					start: "18h30",
-					stop: "19h",
+					start: "17h30",
+					stop: "18h20",
 					room: "Atelier",
-					descr: "Découvrir les blockchains par le jeu"
+					descr: "Comprendre les blockchains par la métaphore"
 				},
 				{
-					start: "19h",
-					stop: "19h30",
-					room: "Terre du Milieu",
-					descr: "État des lieux des blockchains : Revue des différentes technologies"
-				},
-				{
-					start: "19h30",
+					start: "18h20",
 					stop: "20h",
 					room: "Terre du Milieu",
-					descr: "Créer son identité sur la blockchain"
+					descr: "Blockchain & monde réel : 6 thématiques appuyées d'exemples concrets"
 				},
 				{
 					start: "20h",
-					stop: "21h30",
+					stop: "20h30",
+					room: "Terre du Milieu",
+					descr: "Dîner"
+				},
+				{
+					start: "20h30",
+					stop: "21h10",
 					room: "Holodeck",
-					descr: "Conférence participative : Tour d'horizon des applications et implications de la blockchain"
+					descr: "Les implications sociétales et culturelles : tables rondes"
+				},
+				{
+					start: "21h10",
+					stop: "21h50",
+					room: "Holodeck",
+					descr: "Les enjeux de sa diffusion : pédagogie & design"
+				},
+				{
+					start: "21h50",
+					stop: "22h30",
+					room: "Holodeck",
+					descr: "Atelier de pratique et de contribution : “Validation ninja meetup”"
+				},
+				{
+					start: "22h30",
+					stop: "00h",
+					room: "Holodeck",
+					descr: "BlockChill : expériences interactives, sonores et visuelles"
 				}
 			]
 		},
