@@ -54,7 +54,12 @@
 	font-weight: 300;
 	width: 100%;
 }
-
+.contrib-white {
+	color: white;
+	font-size: 18px;
+	font-weight: 300;
+	width: 100%;
+}
 .intro-white-small {
 	width: 100%;
 	color: white;
