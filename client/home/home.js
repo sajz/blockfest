@@ -155,10 +155,17 @@ function getList() {
 	 {
 	  	name: "Mourdjen Bari",
 	  	employment: "Développeur",
-	  	workingPlace: "GameLab, CRI",
+	  	workingPlace: "Gamelier, CRI",
 	  	link: "http://cri-paris.org/team/mourdjen-bari/",
 	  	filename: rep + "mourdjen.jpg"
 	 },
+ 	{
+ 		name: "Jan Ritsema",
+ 		employment: "Directeur",
+ 		workingPlace: "PAF",
+ 		link: "http://www.houseonfire.eu/jan-ritsema/",
+ 		filename: rep + "janritsema.jpg"
+ 	},
 	{
 		name: "Sébastien Couture",
 		employment: "cofondateur",
