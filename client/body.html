@@ -25,6 +25,11 @@
 			class="{{#if $eq tab 'program'}}active{{/if}}">
 				<a href=#>Programme</a>
 			</li>
+			<li role=presentation
+			id="faq-tab"
+			class="{{#if $eq tab 'faq'}}active{{/if}}">
+				<a href=#>FAQ</a>
+			</li>
 			<!--
 			<li role=presentation
 			id="participate-tab"
@@ -96,6 +101,9 @@
 	{{/if}}
 	{{#if $eq tab "program"}}
 		{{> program}}
+	{{/if}}
+	{{#if $eq tab "faq"}}
+		{{> faq}}
 	{{/if}}
 	{{#if $eq tab "participate"}}
 		{{> participate}}

@@ -35,6 +35,7 @@ Template.body.helpers({
 Template.body.events({
 	"click #accueil-tab":		function () {Session.set("tab", "accueil");		},
 	"click #program-tab":		function () {Session.set("tab", "program");		},
+	"click #faq-tab":			function () {Session.set("tab", "faq");			},
 	"click #participate-tab":	function () {Session.set("tab", "participate");	},
 	"click #rules-tab":			function () {Session.set("tab", "rules");		},
 	"click #team-tab":			function () {Session.set("tab", "team");		},
