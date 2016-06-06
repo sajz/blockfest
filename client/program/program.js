@@ -85,15 +85,39 @@ function getDays() {
 			entries: [
 				{
 					start: "17h",
-					stop: "19h",
+					stop: "18h30",
 					room: "Terre du Milieu",
 					descr: "Pré-Sprint : Introduction au week-end, aux valeurs, aux objectifs."
 				},
 				{
-					start: "19h",
-					stop: "--h",
-					room: "Holodeck",
+					start: "18h30",
+					stop: "20h",
+					room: "Terre du Milieu",
 					descr: "Barcamp : venez pitcher vos idées. Le BlockSprint sera un moment de création collective, pour construire des projets blockchain et une base de connaissance ouverte."
+				},
+				{
+					start: "20h",
+					stop: "21h",
+					room: "Terre du Milieu",
+					descr: "Présentation des technologies par les pentors"
+				},
+				{
+					start: "21h",
+					stop: "21h30",
+					room: "Terre du Milieu",
+					descr: "Inscription des projets dans la plateforme de contribution"
+				},
+				{
+					start: "21h30",
+					stop: "23h",
+					room: "Terre du Milieu",
+					descr: "Feedbacks sur les projets"
+				},
+				{
+					start: "22h30",
+					stop: "00h",
+					room: "Terre du Milieu",
+					descr: "Passage des mentors dans les groupes pour faire le point sur les MVP choisis"
 				}
 			]
 		},
@@ -105,7 +129,7 @@ function getDays() {
 					start: "08h30",
 					stop: "09h",
 					room: "Terre du Milieu",
-					descr: "Petit déjeunner"
+					descr: "Petit déjeuner"
 				},
 				{
 					start: "09h",
@@ -114,10 +138,58 @@ function getDays() {
 					descr: "Ateliers Techniques pour chaque Dojo par les mentors"
 				},
 				{
-					start: "11h",
+					start: "10h",
+					stop: "11h",
+					room: "Terre du Milieu",
+					descr: "Atelier design & prototypage pour les non-développeurs"
+				},
+				{
+					start: "12h30",
+					stop: "14h",
+					room: "Terre du Milieu",
+					descr: "Déjeuner"
+				},
+				{
+					start: "14h",
+					stop: "15h",
+					room: "Terre du Milieu",
+					descr: "Atelier gouvernance"
+				},
+				{
+					start: "15h",
+					stop: "15h30",
+					room: "Terre du Milieu",
+					descr: "Atelier Blockchain x Democracy"
+				},
+				{
+					start: "16h30",
+					stop: "18h",
+					room: "Terre du Milieu",
+					descr: "Goûter + table ronde des mentors"
+				},
+				{
+					start: "19h15",
 					stop: "--h",
 					room: "Terre du Milieu",
-					descr: "BlockSprint"
+					descr: "Apéro"
+				},
+				{
+					start: "19h30",
+					stop: "20h30",
+					room: "Terre du Milieu",
+					descr: "Keynotes"
+				},
+				{
+					start: "20h30",
+					stop: "22h30",
+					room: "Terre du Milieu",
+					descr: "Dîner"
+				},
+				{
+					start: "22h30",
+					stop: "00h",
+					room: "Terre du Milieu",
+					descr: "Dojo Tournament"
 				}
 			]
 		},
@@ -132,22 +204,64 @@ function getDays() {
 					descr: "Petit déjeunner"
 				},
 				{
+					start: "09h",
+					stop: "09h30",
+					room: "Terre du Milieu",
+					descr: "Rappel des règles de contribution"
+				},
+				{
+					start: "10h30",
+					stop: "12h",
+					room: "Terre du Milieu",
+					descr: "Passage des mentors dans les équipes"
+				},
+				{
 					start: "12h",
 					stop: "--h",
 					room: "Terre du Milieu",
-					descr: "Deadline de rendu des présentations"
+					descr: "Deadline de rendu des présentations sur clé"
 				},
 				{
-					start: "14h30",
-					stop: "16h",
+					start: "12h30",
+					stop: "14h",
+					room: "Terre du Milieu",
+					descr: "Déjeuner"
+				},
+				{
+					start: "14h",
+					stop: "14h30",
+					room: "Terre du Milieu",
+					descr: "Photo de groupe"
+				},
+				{
+					start: "14h45",
+					stop: "16h30",
 					room: "Terre du Milieu",
 					descr: "Démos & Pitchs"
 				},
 				{
+					start: "17h30",
+					stop: "18h",
+					room: "Terre du Milieu",
+					descr: "Débriefing"
+				},
+				{
 					start: "18h",
+					stop: "18h30",
+					room: "Terre du Milieu",
+					descr: "Annonce des résultats"
+				},
+				{
+					start: "18h30",
 					stop: "19h",
 					room: "Terre du Milieu",
-					descr: "Annonce des résultats et clôture"
+					descr: "Conclusion"
+				},
+				{
+					start: "19h",
+					stop: "--h",
+					room: "Terre du Milieu",
+					descr: "Cocktail de clôture"
 				}
 			]
 		}
